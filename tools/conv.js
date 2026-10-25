@@ -108,3 +108,11 @@ function rich(s){
   }).join('').replace(/\s+/g,' ').trim();
 }
 exports.rich=rich;
+// ===== فلتر أسئلة الواجب: سؤال بيعتمد على رسمة مش موجودة أو على سؤال تاني يتمسح، و«من الرسم:» في أول سؤال يتحل جبريًا تتشال =====
+const FIG=/المرسوم|المرسومة|تناسب المنحنى|يناسب المنحنى|المنحنى الأحمر|المنحنى الأزرق|أي منحنى|المنحنيات|في سؤال|السؤال السابق|الشكل المجاور|الشكل التالي|الشكل أدناه|الرسم المجاور|من الرسم|من الشكل|الجدول المجاور/;
+const LEAD=/^\s*من الرسم\s*[:：،]\s*/;
+exports.hwFilter=h=>{
+  const t=String(h.text||'').replace(LEAD,'');
+  if(FIG.test(t)||(h.options||[]).some(o=>FIG.test(o))||(h.options&&h.options.length&&h.options.every(o=>/^\(?\s*[أ-ي]{1,2}\s*\)?$/.test(String(o).trim()))))return null; // خيارات زي (أ)/(ب) = بتشاور على رسمة
+  return Object.assign({},h,{text:t},h.html!=null?{html:String(h.html).replace(LEAD,'')}:{});
+};

@@ -1,10 +1,41 @@
 /* عبّي تحضير نور v2 — أ. رشدي سيد
-   ضغطة واحدة: يقرأ عنوان الدرس المختار، يلاقيه في البنك المدمج، ويعبّي. */
+   ضغطة واحدة: يقرأ عنوان الدرس المختار، يلاقيه في البنك، ويعبّي.
+   الزر الصغير: البنك مش جوه filler.js — بيحمّل banks/<المسار>.js للصف اللي في الصفحة بس.
+   الزر الكامل: البنك كله مدمج (EMBED). */
 (function () {
-  var BANK = __BANK__, VER = '__VER__', CURR = __CURR__, TOOL = 'https://claude.ai/artifact/JiKpt7g2M2EawHpdBcZMXH';
+  var EMBED = __BANK__, AVAIL = __AVAIL__, VER = '__VER__', CURR = __CURR__, TOOL = 'https://claude.ai/artifact/JiKpt7g2M2EawHpdBcZMXH';
+  var BASE = ((document.currentScript && document.currentScript.src) || '').replace(/[^\/]*$/, '') || 'https://roshdy1221985.github.io/noor-filler/';
   var $ = window.jQuery, CK = window.CKEDITOR;
+  function trackName(t) { var g = CURR.filter(function (g) { return g.t === t; })[0]; return g ? 'الصف ' + g.n : t; }
+  /* يحمّل بنوك المسارات المطلوبة (اللي ليها ملف بس) وبعدين cb(الدروس) */
+  function loadBank(tracks, cb) {
+    tracks = tracks.filter(function (t) { return AVAIL.indexOf(t) > -1; });
+    if (EMBED) return cb(EMBED.filter(function (l) { return tracks.indexOf(l.track) > -1; }));
+    var W = window.NOOR_BANK = window.NOOR_BANK || {}, left = tracks.filter(function (t) { return !W[t]; }), n = left.length, bad = false;
+    var done = function () { cb([].concat.apply([], tracks.map(function (t) { return W[t] || []; }))); };
+    if (!n) return done();
+    left.forEach(function (t) {
+      var s = document.createElement('script'); s.src = BASE + 'banks/' + t + '.js?v=' + Date.now();
+      s.onload = function () { if (!--n && !bad) done(); };
+      s.onerror = function () { if (!bad) { bad = true; alert('مقدرتش أحمّل بنك ' + trackName(t) + ' من GitHub (النت أو منصة نور مانعة التحميل).\nاستخدم «الزر الكامل» من صفحة التركيب.'); } };
+      document.head.appendChild(s);
+    });
+  }
+  /* يسأل المعلم يختار الصف — list: أكواد المسارات، def: المقترح */
+  function pickTrack(msg, list, def) {
+    var i = list.indexOf(def);
+    var pick = prompt(msg + '\n' + list.map(function (t, k) { return (k + 1) + ') ' + trackName(t) + (AVAIL.indexOf(t) > -1 ? '' : '  (لسه مفيش تحضير جاهز)'); }).join('\n'), String(i > -1 ? i + 1 : 1));
+    if (!pick) return null;
+    return list[parseInt(String(pick).replace(/[٠-٩]/g, function (d) { return '٠١٢٣٤٥٦٧٨٩'.indexOf(d); }), 10) - 1] || null;
+  }
   /* ===== وضع الواجب: صفحة «إضافة مجموعة مفردات دفعة واحدة» ===== */
   function homeworkMode() {
+    if (!AVAIL.length) return alert('مفيش واجبات في البنك لسه.');
+    var t = AVAIL.length === 1 ? AVAIL[0] : pickTrack('اختار الصف:', AVAIL, detectTrack());
+    if (!t) return;
+    loadBank([t], homeworkFill);
+  }
+  function homeworkFill(BANK) {
     var sleep = function (ms) { return new Promise(function (r) { setTimeout(r, ms); }); };
     var log = [], fail = null;
     var withHw = BANK.filter(function (l) { return l.homework && l.homework.length; });
@@ -131,7 +162,11 @@
   }
   var titleEl = document.getElementById('PreparationTitle'), title = titleEl ? titleEl.value.trim() : '';
   if (!title) return alert('اختار الدرس من الشجرة الأول، وبعدين دوس الزر.');
-  var track = detectTrack(), t = norm(title), tn = nums(title), d = null;
+  var track = detectTrack(), tracks = track && (track.length === 3 ? CURR.map(function (g) { return g.t; }).filter(function (x) { return x.indexOf(track) === 0; }) : [track]);
+  if (!tracks) { track = pickTrack('مش لاقي اسم الصف في الصفحة. اختار الصف:', CURR.map(function (g) { return g.t; }), null); if (!track) return; tracks = [track]; }
+  loadBank(tracks, main);
+  function main(BANK) {
+  var t = norm(title), tn = nums(title), d = null;
   var hits = BANK.filter(function (l) { return !track || !l.track || l.track === track || (track.length === 3 && l.track.indexOf(track) === 0); })
     .map(function (l) { return { l: l, sc: score(l.lesson, t, tn) }; }).filter(function (h) { return h.sc >= 3; }).sort(function (a, b) { return b.sc - a.sc; });
   if (hits.length > 1 && hits[0].sc === hits[1].sc) {
@@ -187,4 +222,5 @@
     if (k && CK.instances[k]) { CK.instances[k].setData(d[m[0]]); CK.instances[k].updateElement(); report.push(m[4]); } else warn.push('مش لاقي ' + m[4]);
   });
   alert('✔ ' + (d.lesson ? '«' + d.lesson + '»\n' : '') + 'اتعبّى: ' + report.join('، ') + (warn.length ? '\n\n⚠ راجع:\n- ' + warn.join('\n- ') : '') + '\n\nراجع قبل الحفظ.  (بنك ' + VER + ')');
+  }
 })();

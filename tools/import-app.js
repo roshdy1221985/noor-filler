@@ -2,7 +2,7 @@
 // الاستخدام: node tools/import-app.js <unitN.html> <كود-المسار مثل g11a> <رقم-الفصل 1 أو 2> [رابط-المراجعة]
 // محتاج playwright (بيفتح الملف في متصفح مخفي ويقرأ UNIT و LESSONS بعد التحميل)
 const fs=require('fs'),path=require('path'),R=p=>path.join(__dirname,'..',p);
-const {P,Hh,digits,rich}=require('./conv.js');
+const {P,Hh,digits,rich,hwFilter}=require('./conv.js');
 const [file,track,sem,link]=process.argv.slice(2);
 if(!file||!/^g(0[5-9]|10|11[ab]|12[ab])$/.test(track||'')||!/^[12]$/.test(sem||'')){console.error('الاستخدام: node tools/import-app.js unit1.html g11a 1 [https://...]');process.exit(1)}
 const CURR=JSON.parse(fs.readFileSync(R('curriculum.json'),'utf8')).find(g=>g.t===track);
@@ -18,9 +18,10 @@ async function load(f){
 // كتابة التطبيق: الرياضيات بين $…$ و س^2 من غير أقواس — نحولها لصيغة conv.js
 const caret=m=>m.replace(/\^(?!\{)(-?[0-9]+|[^\s{])/g,'^{$1}');
 const parts=s=>String(s).split(/(\$[^$]*\$)/).filter(Boolean).map(x=>x[0]==='$'&&x.length>1&&x.endsWith('$')?{m:caret(x.slice(1,-1))}:{t:x});
-const textHtml=t=>t.split(/(<[^>]+>)/).map(x=>x[0]==='<'?x:digits(x.replace(/#[a-z]\{[^}]*\}(\{[^}]*\})?/g,c=>Hh(c)))).join('');
+const TAG=/(<\/?[a-zA-Z][^<>]*>)/;   // وسوم HTML بس — مش علامات < و > في المتباينات
+const textHtml=t=>t.split(TAG).map(x=>TAG.test(x)?x:digits(x.replace(/#[a-z]\{[^}]*\}(\{[^}]*\})?/g,c=>Hh(c)))).join('');
 const H=s=>parts(s).map(x=>x.m!==undefined?Hh(x.m):textHtml(x.t)).join('').replace(/شكل U/g,'شكل ∪').replace(/\s+/g,' ').trim();   // HTML للتحضير
-const strip=s=>String(s).replace(/<br\s*\/?>/g,' ').replace(/<[^>]+>/g,'');
+const strip=s=>String(s).replace(/<br\s*\/?>/g,' ').replace(/<\/?[a-zA-Z][^<>]*>/g,'');
 const T1=s=>parts(strip(s)).map(x=>x.m!==undefined?P(x.m):digits(x.t)).join('').replace(/\s+/g,' ').trim();   // نص عادي
 const RH=s=>parts(strip(s)).map(x=>x.m!==undefined?rich(x.m):digits(x.t).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')).join('').replace(/\s+/g,' ').trim(); // HTML مع MathML للواجب
 const bad=s=>/<(svg|img|table|canvas)/i.test(s);
@@ -42,7 +43,7 @@ const T=rows=>"<table border='1' cellpadding='6' style='border-collapse:collapse
     const id=track+'-s'+sem+'-'+UNIT.n+'-'+ln+(SUF[suf]||'');
     const quiz=L.quiz||[],ws=L.ws||[],prac=L.prac||[];
     const mcq=quiz.filter(q=>q.o&&!bad(q.q)),hi=quiz.find(q=>q.lv==='H'&&!bad(q.q)),low=prac.find(p=>p.t==='mc'&&p.ex&&!bad(p.q));
-    const hw=[],seen=new Set(),push=h=>{if(!seen.has(h.text)){seen.add(h.text);hw.push(h)}};
+    const hw=[],seen=new Set(),push=h=>{h=hwFilter(h);if(h&&!seen.has(h.text)){seen.add(h.text);hw.push(h)}};
     prac.forEach(p=>{if(bad(p.q)||(p.o||[]).some(bad))return;
       if(p.t==='tf')push({type:'tf',level:1,degree:1,text:T1(p.q),html:RH(p.q),answer:!!p.a});
       else if(p.t==='mc'&&p.o)push({type:'mcq',level:(p.cov||[]).some(c=>/^و/.test(c))?3:2,degree:1,text:T1(p.q),html:RH(p.q),options:p.o.map(T1),answer:p.a+1});});

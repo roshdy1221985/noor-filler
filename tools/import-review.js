@@ -1,7 +1,7 @@
 // يسحب دروس ملف مراجعة تفاعلية (نظام أ. رشدي) إلى bank.json
 // الاستخدام: node tools/import-review.js <ملف-المراجعة.html> <كود-المسار مثل g11a> <رقم-الفصل 1 أو 2> [رابط-المراجعة]
 const fs=require('fs'),path=require('path'),R=p=>path.join(__dirname,'..',p);
-const extract=require('./extract-lib.js'),{P,Hh,digits,rich}=require('./conv.js');
+const extract=require('./extract-lib.js'),{P,Hh,digits,rich,hwFilter}=require('./conv.js');
 const [file,track,sem,link]=process.argv.slice(2);
 if(!file||!/^g(0[5-9]|10|11[ab]|12[ab])$/.test(track||'')||!/^[12]$/.test(sem||'')){console.error('الاستخدام: node tools/import-review.js review.html g11a 1 [https://...]');process.exit(1)}
 const CURR=JSON.parse(fs.readFileSync(R('curriculum.json'),'utf8')).find(g=>g.t===track);
@@ -28,7 +28,7 @@ U.LESSONS.forEach((L,idx)=>{
       ['غلق (٥ د)','يلخص القواعد والأخطاء الشائعة','يجيب تذكرة الخروج','—']]),
     formative_html:`<p><b>نشاط فردي/ثنائي:</b> ${ws[2]?'<b>'+Hh(ws[2][0])+':</b> '+Hh(ws[2][1])+' <i>(الإجابة: '+Hh(ws[2][2])+')</i>':''}</p><p><b>نشاط علاجي للمتعثرين:</b> ${low?Hh(low[2])+' '+low[3].map(Hh).join(' / ')+' <i>(تلميح: '+Hh(low[4])+')</i>':''}</p><p><b>سؤال قدرات عليا للمتميزين:</b> ${hi?Hh(hi[4])+' <i>(الإجابة: '+Hh(hi[6])+')</i>':ws[5]?Hh(ws[5][1]):''}</p>`,
     final_html:`<p><b>تذكرة خروج:</b> ${exit?Hh(exit[4])+'</p><p>'+exit[5].map(o=>'⬭ '+Hh(o)).join('<br>'):''}</p><p><b>الواجب:</b> واجب إلكتروني على منصة نور${link?'، ومراجعة الدرس في تطبيق المراجعة: '+link:''}</p>`,
-    homework:hw.concat(old?(old.homework||[]).filter(h=>h.type==='tf'):[])};
+    homework:hw.concat(old?(old.homework||[]).filter(h=>h.type==='tf'):[]).map(hwFilter).filter(Boolean)};
   if(old){Object.assign(old,lesson);updated++}else{bank.push(lesson);added++}
 });
 fs.writeFileSync(R('bank.json'),JSON.stringify(bank,null,1));

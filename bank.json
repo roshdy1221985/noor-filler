@@ -2807,48 +2807,6 @@
     "type": "mcq",
     "level": 2,
     "degree": 1,
-    "text": "معادلة المنحنى المرسوم:",
-    "html": "معادلة المنحنى المرسوم:",
-    "options": [
-     "ص = −(س − ٢)² + ٣",
-     "ص = (س − ٢)² + ٣",
-     "ص = −(س + ٢)² + ٣",
-     "ص = −(س − ٣)² + ٢"
-    ],
-    "answer": 1
-   },
-   {
-    "type": "mcq",
-    "level": 2,
-    "degree": 1,
-    "text": "المنحنى المرسوم رأسه (−٢ ، −٦) ويقطع المحور الصادي عند ١٠. معادلته:",
-    "html": "المنحنى المرسوم رأسه (<math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mo>−</mo><mn>٢</mn></math> ، <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mo>−</mo><mn>٦</mn></math>) ويقطع المحور الصادي عند ١٠. معادلته:",
-    "options": [
-     "ص = ٤(س + ٢)² − ٦",
-     "ص = (س + ٢)² − ٦",
-     "ص = ٤(س − ٢)² − ٦",
-     "ص = ٢(س + ٢)² − ٦"
-    ],
-    "answer": 1
-   },
-   {
-    "type": "mcq",
-    "level": 2,
-    "degree": 1,
-    "text": "أي معادلة تناسب المنحنى المرسوم؟",
-    "html": "أي معادلة تناسب المنحنى المرسوم؟",
-    "options": [
-     "ص = −س² − ٣س + ٦",
-     "ص = س² − ٣س + ٦",
-     "ص = ٢س² − ٣س + ٣",
-     "ص = −س² + ٣س + ٦"
-    ],
-    "answer": 1
-   },
-   {
-    "type": "mcq",
-    "level": 2,
-    "degree": 1,
     "text": "أي رسم يمثل ص = ٤س² − ٤س + ١ ؟",
     "html": "أي رسم يمثل <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><mn>٤</mn><msup><mi mathvariant=\"normal\">س</mi><mrow><mn>٢</mn></mrow></msup><mo>−</mo><mn>٤</mn><mi mathvariant=\"normal\">س</mi><mo>+</mo><mn>١</mn></math> ؟",
     "options": [
@@ -2892,14 +2850,6 @@
     "answer": false
    },
    {
-    "type": "tf",
-    "level": 1,
-    "degree": 1,
-    "text": "في المنحنيات الثمانية، المنحنى (و) معادلته ص = س² + ٦س + ٥",
-    "html": "في المنحنيات الثمانية، المنحنى (و) معادلته <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><msup><mi mathvariant=\"normal\">س</mi><mrow><mn>٢</mn></mrow></msup><mo>+</mo><mn>٦</mn><mi mathvariant=\"normal\">س</mi><mo>+</mo><mn>٥</mn></math>",
-    "answer": true
-   },
-   {
     "type": "mcq",
     "level": 1,
     "degree": 1,
@@ -2910,20 +2860,6 @@
      "(١ ، −٥)",
      "(−١ ، ٥)",
      "(١ ، ٥)"
-    ],
-    "answer": 1
-   },
-   {
-    "type": "mcq",
-    "level": 1,
-    "degree": 1,
-    "text": "ظلّل الشكل المقترن بمعادلة المنحنى المرسوم:",
-    "html": "ظلّل الشكل المقترن بمعادلة المنحنى المرسوم:",
-    "options": [
-     "ص = −(س − ٢)² + ٣",
-     "ص = (س − ٢)² + ٣",
-     "ص = −(س + ٢)² + ٣",
-     "ص = −(س − ٣)² + ٢"
     ],
     "answer": 1
    }
@@ -3206,14 +3142,6 @@
     "text": "من حلول (٣س + ٢)(س − ١) = ٢ القيمة س = ٤/٣",
     "html": "من حلول <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mo>(</mo><mn>٣</mn><mi mathvariant=\"normal\">س</mi><mo>+</mo><mn>٢</mn><mo>)</mo><mo>(</mo><mi mathvariant=\"normal\">س</mi><mo>−</mo><mn>١</mn><mo>)</mo><mo>=</mo><mn>٢</mn></math> القيمة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">س</mi><mo>=</mo><mfrac><mrow><mn>٤</mn></mrow><mrow><mn>٣</mn></mrow></mfrac></math>",
     "answer": true
-   },
-   {
-    "type": "tf",
-    "level": 1,
-    "degree": 1,
-    "text": "في سؤال المستطيلين متساويي المساحة نقبل الحل س ≈ −٠٫٥٢٣",
-    "html": "في سؤال المستطيلين متساويي المساحة نقبل الحل <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">س</mi><mo>≈</mo><mo>−</mo><mn>٠٫٥٢٣</mn></math>",
-    "answer": false
    },
    {
     "type": "mcq",
@@ -3587,10 +3515,10 @@
     "type": "mcq",
     "level": 2,
     "degree": 1,
-    "text": "من الرسم: حل المتباينة (س − ٤)(س + ١) > ٠ هو:",
-    "html": "من الرسم: حل المتباينة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mo>(</mo><mi mathvariant=\"normal\">س</mi><mo>−</mo><mn>٤</mn><mo>)</mo><mo>(</mo><mi mathvariant=\"normal\">س</mi><mo>+</mo><mn>١</mn><mo>)</mo><mo>&gt;</mo><mn>٠</mn></math> هو:",
+    "text": "حل المتباينة (س − ٤)(س + ١) > ٠ هو:",
+    "html": "حل المتباينة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mo>(</mo><mi mathvariant=\"normal\">س</mi><mo>−</mo><mn>٤</mn><mo>)</mo><mo>(</mo><mi mathvariant=\"normal\">س</mi><mo>+</mo><mn>١</mn><mo>)</mo><mo>&gt;</mo><mn>٠</mn></math> هو:",
     "options": [
-     "س ٤",
+     "س < −١ أو س > ٤",
      "−١ < س < ٤",
      "س > ٤",
      "س < −١"
@@ -3601,11 +3529,11 @@
     "type": "mcq",
     "level": 2,
     "degree": 1,
-    "text": "من الرسم: حل المتباينة (٤ − س)(س − ٢) > ٠ هو:",
-    "html": "من الرسم: حل المتباينة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mo>(</mo><mn>٤</mn><mo>−</mo><mi mathvariant=\"normal\">س</mi><mo>)</mo><mo>(</mo><mi mathvariant=\"normal\">س</mi><mo>−</mo><mn>٢</mn><mo>)</mo><mo>&gt;</mo><mn>٠</mn></math> هو:",
+    "text": "حل المتباينة (٤ − س)(س − ٢) > ٠ هو:",
+    "html": "حل المتباينة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mo>(</mo><mn>٤</mn><mo>−</mo><mi mathvariant=\"normal\">س</mi><mo>)</mo><mo>(</mo><mi mathvariant=\"normal\">س</mi><mo>−</mo><mn>٢</mn><mo>)</mo><mo>&gt;</mo><mn>٠</mn></math> هو:",
     "options": [
      "٢ < س < ٤",
-     "س ٤",
+     "س < ٢ أو س > ٤",
      "س > ٢",
      "لا يوجد حل"
     ],
@@ -3780,7 +3708,7 @@
     "text": "قيم ك التي يقطع عندها ص = ٢س − ١ المنحنى ص = س² + ك س + ٣ في نقطتين:",
     "html": "قيم ك التي يقطع عندها <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><mn>٢</mn><mi mathvariant=\"normal\">س</mi><mo>−</mo><mn>١</mn></math> المنحنى <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><msup><mi mathvariant=\"normal\">س</mi><mrow><mn>٢</mn></mrow></msup><mo>+</mo><mi mathvariant=\"normal\">ك</mi><mi mathvariant=\"normal\">س</mi><mo>+</mo><mn>٣</mn></math> في نقطتين:",
     "options": [
-     "ك ٦",
+     "ك < −٢ أو ك > ٦",
      "−٢ < ك < ٦",
      "ك > ٦",
      "ك < ٦"
@@ -3795,7 +3723,7 @@
     "html": "قيم ع التي لا يتقاطع عندها <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><mi mathvariant=\"normal\">ع</mi><mi mathvariant=\"normal\">س</mi><mo>+</mo><mn>٥</mn></math> مع <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><msup><mi mathvariant=\"normal\">س</mi><mrow><mn>٢</mn></mrow></msup><mo>−</mo><mi mathvariant=\"normal\">س</mi><mo>+</mo><mn>٦</mn></math>:",
     "options": [
      "−٣ < ع < ١",
-     "ع ١",
+     "ع < −٣ أو ع > ١",
      "ع > ١",
      "−١ < ع < ٣"
     ],
@@ -3805,8 +3733,8 @@
     "type": "mcq",
     "level": 2,
     "degree": 1,
-    "text": "من الرسم: المستقيم ص = س − ١ يقطع ص = ك س² في نقطتين. إذن:",
-    "html": "من الرسم: المستقيم <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><mi mathvariant=\"normal\">س</mi><mo>−</mo><mn>١</mn></math> يقطع <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><mi mathvariant=\"normal\">ك</mi><msup><mi mathvariant=\"normal\">س</mi><mrow><mn>٢</mn></mrow></msup></math> في نقطتين. إذن:",
+    "text": "المستقيم ص = س − ١ يقطع ص = ك س² في نقطتين. إذن:",
+    "html": "المستقيم <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><mi mathvariant=\"normal\">س</mi><mo>−</mo><mn>١</mn></math> يقطع <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><mi mathvariant=\"normal\">ك</mi><msup><mi mathvariant=\"normal\">س</mi><mrow><mn>٢</mn></mrow></msup></math> في نقطتين. إذن:",
     "options": [
      "ك < ١/٤",
      "ك = ١/٤",
@@ -3931,20 +3859,6 @@
     "type": "mcq",
     "level": 2,
     "degree": 1,
-    "text": "العلاقة المرسومة:",
-    "html": "العلاقة المرسومة:",
-    "options": [
-     "ليست دالة",
-     "دالة واحد إلى واحد",
-     "دالة متعدد إلى واحد",
-     "دالة خطية"
-    ],
-    "answer": 1
-   },
-   {
-    "type": "mcq",
-    "level": 2,
-    "degree": 1,
     "text": "أي الدوال الآتية (المجال ح) واحد إلى واحد؟",
     "html": "أي الدوال الآتية (المجال ح) واحد إلى واحد؟",
     "options": [
@@ -3980,20 +3894,6 @@
      "٥ ≤ د(س) ≤ ١٠",
      "١ ≤ د(س) ≤ ٥",
      "٠ ≤ د(س) ≤ ١٠"
-    ],
-    "answer": 1
-   },
-   {
-    "type": "mcq",
-    "level": 2,
-    "degree": 1,
-    "text": "مدى الدالة المرسومة د(س) = ٧ + ٢س − س²:",
-    "html": "مدى الدالة المرسومة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">د</mi><mo>(</mo><mi mathvariant=\"normal\">س</mi><mo>)</mo><mo>=</mo><mn>٧</mn><mo>+</mo><mn>٢</mn><mi mathvariant=\"normal\">س</mi><mo>−</mo><msup><mi mathvariant=\"normal\">س</mi><mrow><mn>٢</mn></mrow></msup></math>:",
-    "options": [
-     "−٨ ≤ د(س) ≤ ٨",
-     "−٨ ≤ د(س) ≤ ٤",
-     "−١ ≤ د(س) ≤ ٥",
-     "٤ ≤ د(س) ≤ ٨"
     ],
     "answer": 1
    },
@@ -4400,48 +4300,6 @@
      "٢ ≤ س ≤ ٤",
      "س ≥ ١",
      "٠ ≤ س ≤ ٩"
-    ],
-    "answer": 1
-   },
-   {
-    "type": "mcq",
-    "level": 2,
-    "degree": 1,
-    "text": "المنحنى الأحمر هو:",
-    "html": "المنحنى الأحمر هو:",
-    "options": [
-     "انعكاس منحنى د حول ص = س",
-     "انعكاس حول محور السينات",
-     "انسحاب لمنحنى د",
-     "منحنى ١/(د(س))"
-    ],
-    "answer": 1
-   },
-   {
-    "type": "mcq",
-    "level": 2,
-    "degree": 1,
-    "text": "أي منحنى ليس لدالته معكوس؟",
-    "html": "أي منحنى ليس لدالته معكوس؟",
-    "options": [
-     "(د)",
-     "(أ)",
-     "(ب)",
-     "(جـ)"
-    ],
-    "answer": 1
-   },
-   {
-    "type": "mcq",
-    "level": 2,
-    "degree": 1,
-    "text": "أي المنحنيات متماثل حول المستقيم ص = س؟",
-    "html": "أي المنحنيات متماثل حول المستقيم ص = س؟",
-    "options": [
-     "(٤س + ٥)/(٣س − ٤)",
-     "(٢س − ٣)/(س − ٥)",
-     "س²",
-     "٢س + ١"
     ],
     "answer": 1
    },
