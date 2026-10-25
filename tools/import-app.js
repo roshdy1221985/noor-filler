@@ -32,20 +32,29 @@ const T=rows=>"<table border='1' cellpadding='6' style='border-collapse:collapse
   const CU=CURR.s[sem-1].u[UNIT.n-(sem==2?CURR.s[0].u.length:0)-1];
   if(!CU){console.error('❌ الوحدة '+UNIT.n+' مش موجودة في خريطة المنهج للفصل '+sem);process.exit(1)}
   const unitName='الوحدة '+ORD[UNIT.n]+': '+CU.n;
-  let added=0,updated=0,skipped=[];
+  let added=0,updated=0,skipped=[],fHw=0,fAll=0;
   LESSONS.forEach(L=>{
-    const m=strip(L.num).replace(/[‎‏\s]/g,'').match(/^([٠-٩]+)-([٠-٩]+)(.*)$/);
-    if(!m){skipped.push(strip(L.num)+' '+L.title);return}           // دروس المراجعة «م» مش دروس في نور
-    const ln=+digits(m[1]).replace(/[٠-٩]/g,d=>'٠١٢٣٤٥٦٧٨٩'.indexOf(d)),suf=m[3].trim();
-    const cname=CU.l[ln-1];if(!cname){skipped.push(L.title);return}
-    const sub=L.title.replace(/^[^:]*:\s*/,'').replace(/[ً-ْ]/g,'');
-    const name=suf?cname.replace(/^(\S+)\s/,'$1 '+suf+' ')+': '+sub:cname;
-    const id=track+'-s'+sem+'-'+UNIT.n+'-'+ln+(SUF[suf]||'');
+    const num=strip(L.num).replace(/[\u200e\u200f\s]/g,''),m=num.match(/^([٠-٩]+)-([٠-٩]+)(.*)$/);
+    const HN=n=>String(n).replace(/\d/g,d=>'٠١٢٣٤٥٦٧٨٩'[d]),uN=HN(UNIT.n);
+    let name,id;
+    if(!m){ // درس المراجعة «م» ← خانة «تمارين…» في نفس الوحدة لو موجودة في المنهج
+      const rv=CU.l.find(x=>/تمارين/.test(x));
+      if(!rv){skipped.push(num+' '+L.title);return}
+      name=rv;id=track+'-s'+sem+'-'+UNIT.n+'-r';
+    }else{ // الترقيم في التطبيق «الدرس-الوحدة»، وفي المنهج «الوحدة-الدرس»
+      const ln=+m[1].replace(/[٠-٩]/g,d=>'٠١٢٣٤٥٦٧٨٩'.indexOf(d)),suf=m[3].trim(),key=uN+'-'+HN(ln);
+      if(m[2]!==uN)console.warn('⚠ '+num+': رقم الوحدة مختلف عن UNIT.n='+UNIT.n);
+      const exact=suf&&CU.l.find(x=>x.startsWith(key+' '+suf+' ')),base=CU.l.find(x=>x.startsWith(key+' ')&&!/^\S+\s+(أ|ب|جـ|ج|د)\s/.test(x));
+      if(!exact&&!base){skipped.push(num+' '+L.title+' (مش في المنهج)');return}
+      const sub=L.title.replace(/^[^:]*:\s*/,'').replace(/[\u064B-\u0652]/g,'');
+      name=exact||(suf?base.replace(/^(\S+)\s/,'$1 '+suf+' ')+': '+sub:base);
+      id=track+'-s'+sem+'-'+UNIT.n+'-'+ln+(SUF[suf]||'');
+    }
     // أي سؤال بيعتمد على رسمة أو على سؤال تاني بيتشال من هنا، فالتحضير والواجب ياخدوا اللي بعده
-    const clean=a=>(a||[]).map(x=>{const t=bad(x.q)?null:figOk(x.q,x.o);return t===null?null:Object.assign({},x,{q:t})}).filter(Boolean);
+    const clean=a=>(a||[]).map(x=>{const t=bad(x.q)?null:figOk(x.q,x.o);if(t===null&&!bad(x.q)){fAll++;if(x.t==='tf'||(x.o&&!bad(x.q)))fHw++}return t===null?null:Object.assign({},x,{q:t})}).filter(Boolean);
     const quiz=clean(L.quiz),ws=clean(L.ws),prac=clean(L.prac),exs=clean(L.ex);
     const mcq=quiz.filter(q=>q.o&&!bad(q.q)),hi=quiz.find(q=>q.lv==='H'&&!bad(q.q)),low=prac.find(p=>p.t==='mc'&&p.ex)||prac.find(p=>p.t==='mc'&&p.o)||quiz.find(q=>q.o&&q.lv==='L');
-    const hw=[],seen=new Set(),push=h=>{h=hwFilter(h);if(h&&!seen.has(h.text)){seen.add(h.text);hw.push(h)}};
+    const hw=[],seen=new Set(),push=h=>{h=hwFilter(h);if(!h)fHw++;if(h&&!seen.has(h.text)){seen.add(h.text);hw.push(h)}};
     prac.forEach(p=>{if(bad(p.q)||(p.o||[]).some(bad))return;
       if(p.t==='tf')push({type:'tf',level:1,degree:1,text:T1(p.q),html:RH(p.q),answer:!!p.a});
       else if(p.t==='mc'&&p.o)push({type:'mcq',level:(p.cov||[]).some(c=>/^و/.test(c))?3:2,degree:1,text:T1(p.q),html:RH(p.q),options:p.o.map(T1),answer:p.a+1});});
@@ -70,5 +79,6 @@ const T=rows=>"<table border='1' cellpadding='6' style='border-collapse:collapse
     if(i>=0){bank[i]=lesson;updated++}else{bank.push(lesson);added++}
   });
   fs.writeFileSync(R('bank.json'),JSON.stringify(bank,null,1));
-  console.log(`✔ ${unitName}: ${added} درس جديد، ${updated} درس اتحدّث.`+(skipped.length?' اتسابت: '+skipped.join(' ، '):'')+' الدروس اللي فيها TODO لازم تتكمّل قبل البناء.');
+  const got=new Set(bank.filter(b=>b.track===track&&b.unit===unitName).map(b=>b.lesson)),miss=CU.l.filter(x=>!got.has(x)&&![...got].some(g=>g.startsWith(x.split(' ')[0]+' ')));
+  console.log(`✔ ${unitName}: ${added} درس جديد، ${updated} درس اتحدّث.`+' الفلتر شال '+fAll+' سؤال بيعتمد على رسمة أو سؤال تاني (منهم '+fHw+' كانوا هيدخلوا الواجب).'+(miss.length?' دروس في المنهج من غير مراجعة: '+miss.join(' ، ')+'.':'')+(skipped.length?' اتسابت: '+skipped.join(' ، '):'')+' الدروس اللي فيها TODO لازم تتكمّل قبل البناء.');
 })();
