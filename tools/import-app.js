@@ -2,7 +2,7 @@
 // الاستخدام: node tools/import-app.js <unitN.html> <كود-المسار مثل g11a> <رقم-الفصل 1 أو 2> [رابط-المراجعة]
 // محتاج playwright (بيفتح الملف في متصفح مخفي ويقرأ UNIT و LESSONS بعد التحميل)
 const fs=require('fs'),path=require('path'),R=p=>path.join(__dirname,'..',p);
-const {P,Hh,digits,rich,hwFilter}=require('./conv.js');
+const {P,Hh,digits,rich,hwFilter,figOk}=require('./conv.js');
 const [file,track,sem,link]=process.argv.slice(2);
 if(!file||!/^g(0[5-9]|10|11[ab]|12[ab])$/.test(track||'')||!/^[12]$/.test(sem||'')){console.error('الاستخدام: node tools/import-app.js unit1.html g11a 1 [https://...]');process.exit(1)}
 const CURR=JSON.parse(fs.readFileSync(R('curriculum.json'),'utf8')).find(g=>g.t===track);
@@ -41,8 +41,10 @@ const T=rows=>"<table border='1' cellpadding='6' style='border-collapse:collapse
     const sub=L.title.replace(/^[^:]*:\s*/,'').replace(/[ً-ْ]/g,'');
     const name=suf?cname.replace(/^(\S+)\s/,'$1 '+suf+' ')+': '+sub:cname;
     const id=track+'-s'+sem+'-'+UNIT.n+'-'+ln+(SUF[suf]||'');
-    const quiz=L.quiz||[],ws=L.ws||[],prac=L.prac||[];
-    const mcq=quiz.filter(q=>q.o&&!bad(q.q)),hi=quiz.find(q=>q.lv==='H'&&!bad(q.q)),low=prac.find(p=>p.t==='mc'&&p.ex&&!bad(p.q));
+    // أي سؤال بيعتمد على رسمة أو على سؤال تاني بيتشال من هنا، فالتحضير والواجب ياخدوا اللي بعده
+    const clean=a=>(a||[]).map(x=>{const t=bad(x.q)?null:figOk(x.q,x.o);return t===null?null:Object.assign({},x,{q:t})}).filter(Boolean);
+    const quiz=clean(L.quiz),ws=clean(L.ws),prac=clean(L.prac),exs=clean(L.ex);
+    const mcq=quiz.filter(q=>q.o&&!bad(q.q)),hi=quiz.find(q=>q.lv==='H'&&!bad(q.q)),low=prac.find(p=>p.t==='mc'&&p.ex)||prac.find(p=>p.t==='mc'&&p.o)||quiz.find(q=>q.o&&q.lv==='L');
     const hw=[],seen=new Set(),push=h=>{h=hwFilter(h);if(h&&!seen.has(h.text)){seen.add(h.text);hw.push(h)}};
     prac.forEach(p=>{if(bad(p.q)||(p.o||[]).some(bad))return;
       if(p.t==='tf')push({type:'tf',level:1,degree:1,text:T1(p.q),html:RH(p.q),answer:!!p.a});
@@ -58,10 +60,10 @@ const T=rows=>"<table border='1' cellpadding='6' style='border-collapse:collapse
       warmup_html:old&&old.warmup_html||'<p><b>التعلم القبلي:</b> TODO</p><p><b>التمهيد:</b> TODO</p>',
       procedures_html:T([['تمهيد (٥ د)','يطرح سؤال التعلم القبلي والتمهيد','يجيب ويتوقع','العصف الذهني'],
         ['استكشاف (٧ د)','يعرض المختبر التفاعلي للدرس من تطبيق المراجعة على السبورة الذكية','يلاحظ ويستنتج القاعدة','التعلم بالاكتشاف'],
-        ...(L.ex||[]).filter(e=>!bad(e.q)).slice(0,2).map((e,i)=>[`نمذجة: مثال ${digits(String(i+1))} (٦ د)`,H(e.q)+'<br>'+(e.s||[]).map(s=>H(s[0])+(s[1]?' <i>('+H(s[1])+')</i>':'')).join('<br>'),'يدوّن الخطوة وسببها','النمذجة']),
+        ...exs.slice(0,2).map((e,i)=>[`نمذجة: مثال ${digits(String(i+1))} (٦ د)`,H(e.q)+'<br>'+(e.s||[]).map(s=>H(s[0])+(s[1]?' <i>('+H(s[1])+')</i>':'')).join('<br>'),'يدوّن الخطوة وسببها','النمذجة']),
         ['تطبيق (١١ د)',ws.slice(0,2).map((w,i)=>'<b>تمرين '+digits(String(i+1))+':</b> '+H(w.q)).join('<br>'),'يحل ثنائيًا ويصحح مع زميله','التعلم التعاوني والمتمايز'],
         ['غلق (٥ د)','يلخص القواعد والأخطاء الشائعة','يجيب تذكرة الخروج','—']]),
-      formative_html:`<p><b>نشاط فردي/ثنائي:</b> ${ws[2]?H(ws[2].q)+' <i>(الإجابة: '+H(ws[2].a)+')</i>':''}</p><p><b>نشاط علاجي للمتعثرين:</b> ${low?H(low.q)+' '+low.o.map(H).join(' / ')+' <i>(تلميح: '+H(low.ex)+')</i>':''}</p><p><b>سؤال قدرات عليا للمتميزين:</b> ${hi?H(hi.q)+' <i>(الإجابة: '+H(hi.short||hi.sol||'')+')</i>':ws[ws.length-1]?H(ws[ws.length-1].q):''}</p>`,
+      formative_html:`<p><b>نشاط فردي/ثنائي:</b> ${ws[2]?H(ws[2].q)+' <i>(الإجابة: '+H(ws[2].a)+')</i>':''}</p><p><b>نشاط علاجي للمتعثرين:</b> ${low?H(low.q)+' '+low.o.map(H).join(' / ')+(low.ex||low.guide?' <i>(تلميح: '+H(low.ex||low.guide)+')</i>':''):''}</p><p><b>سؤال قدرات عليا للمتميزين:</b> ${hi?H(hi.q)+' <i>(الإجابة: '+H(hi.short||hi.sol||'')+')</i>':ws[ws.length-1]?H(ws[ws.length-1].q):''}</p>`,
       final_html:`<p><b>تذكرة خروج:</b> ${mcq[0]?H(mcq[0].q)+'</p><p>'+mcq[0].o.map(o=>'⬭ '+H(o)).join('<br>'):''}</p><p><b>الواجب:</b> واجب إلكتروني على منصة نور${link?'، ومراجعة الدرس في تطبيق المراجعة: '+link:''}</p>`,
       homework:hw};
     const i=bank.findIndex(b=>b.id===id);

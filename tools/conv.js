@@ -111,8 +111,15 @@ exports.rich=rich;
 // ===== فلتر أسئلة الواجب: سؤال بيعتمد على رسمة مش موجودة أو على سؤال تاني يتمسح، و«من الرسم:» في أول سؤال يتحل جبريًا تتشال =====
 const FIG=/المرسوم|المرسومة|تناسب المنحنى|يناسب المنحنى|المنحنى الأحمر|المنحنى الأزرق|أي منحنى|المنحنيات|في سؤال|السؤال السابق|الشكل المجاور|الشكل التالي|الشكل أدناه|الرسم المجاور|من الرسم|من الشكل|الجدول المجاور/;
 const LEAD=/^\s*من الرسم\s*[:：،]\s*/;
+// صياغات بتذكر الرسمة بس البيانات كلها في السؤال — تتعدل بدل ما تتمسح
+const REW=[[/المنحنى المرسوم رأسه/g,'منحنى دالة تربيعية رأسه']];
+const fixFig=t=>REW.reduce((s,[a,b])=>s.replace(a,b),String(t).replace(LEAD,''));
+// figOk(نص، [خيارات]) ← النص بعد التنضيف، أو null لو السؤال بيعتمد على رسمة أو على سؤال تاني (للواجب وللتحضير)
+const figOk=(text,options)=>{const t=fixFig(text||'');
+  if(FIG.test(t)||(options||[]).some(o=>FIG.test(o))||(options&&options.length&&options.every(o=>/^\(?\s*[أ-ي]{1,2}\s*\)?$/.test(String(o).trim()))))return null; // خيارات زي (أ)/(ب) = بتشاور على رسمة
+  return t;};
+exports.figOk=figOk;
 exports.hwFilter=h=>{
-  const t=String(h.text||'').replace(LEAD,'');
-  if(FIG.test(t)||(h.options||[]).some(o=>FIG.test(o))||(h.options&&h.options.length&&h.options.every(o=>/^\(?\s*[أ-ي]{1,2}\s*\)?$/.test(String(o).trim()))))return null; // خيارات زي (أ)/(ب) = بتشاور على رسمة
-  return Object.assign({},h,{text:t},h.html!=null?{html:String(h.html).replace(LEAD,'')}:{});
+  const t=figOk(h.text,h.options);if(t===null)return null;
+  return Object.assign({},h,{text:t},h.html!=null?{html:fixFig(h.html)}:{});
 };

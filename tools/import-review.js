@@ -1,7 +1,7 @@
 // يسحب دروس ملف مراجعة تفاعلية (نظام أ. رشدي) إلى bank.json
 // الاستخدام: node tools/import-review.js <ملف-المراجعة.html> <كود-المسار مثل g11a> <رقم-الفصل 1 أو 2> [رابط-المراجعة]
 const fs=require('fs'),path=require('path'),R=p=>path.join(__dirname,'..',p);
-const extract=require('./extract-lib.js'),{P,Hh,digits,rich,hwFilter}=require('./conv.js');
+const extract=require('./extract-lib.js'),{P,Hh,digits,rich,hwFilter,figOk}=require('./conv.js');
 const [file,track,sem,link]=process.argv.slice(2);
 if(!file||!/^g(0[5-9]|10|11[ab]|12[ab])$/.test(track||'')||!/^[12]$/.test(sem||'')){console.error('الاستخدام: node tools/import-review.js review.html g11a 1 [https://...]');process.exit(1)}
 const CURR=JSON.parse(fs.readFileSync(R('curriculum.json'),'utf8')).find(g=>g.t===track);
@@ -9,10 +9,13 @@ const U=extract(file), bank=JSON.parse(fs.readFileSync(R('bank.json'),'utf8'));
 const T=rows=>"<table border='1' cellpadding='6' style='border-collapse:collapse;width:100%'><tr><th>المرحلة والزمن</th><th>دور المعلم</th><th>دور الطالب</th><th>الاستراتيجية</th></tr>"+rows.map(r=>'<tr>'+r.map(c=>'<td>'+c+'</td>').join('')+'</tr>').join('')+'</table>';
 let added=0,updated=0;
 U.LESSONS.forEach((L,idx)=>{
-  const ws=U.WS[L.id]||[],ts=U.TS[L.id]||[];
-  const low=U.RAW.find(r=>r[0]===idx&&r[1]===1),hi=ts.find(t=>t[2]==='H'),exit=ts.find(t=>t[0]==='mcq');
+  // أي سؤال بيعتمد على رسمة أو على سؤال تاني بيتشال (k = مكان نص السؤال)، فالتحضير ياخد اللي بعده
+  const clean=(a,k,o)=>(a||[]).map(x=>{const t=figOk(x[k],o!=null?x[o]:null);if(t===null)return null;const y=x.slice();y[k]=t;return y}).filter(Boolean);
+  const ws=clean(U.WS[L.id],1),ts=clean(U.TS[L.id],4,5),raw=clean(U.RAW,2,3);
+  L={...L,ex:(L.ex||[]).map(e=>{const t=figOk(e.q);return t===null?null:{...e,q:t}}).filter(Boolean)};
+  const low=raw.find(r=>r[0]===idx&&r[1]===1),hi=ts.find(t=>t[2]==='H'),exit=ts.find(t=>t[0]==='mcq');
   const hw=[];
-  U.RAW.filter(r=>r[0]===idx).forEach(r=>hw.push({type:'mcq',level:r[1],degree:1,text:P(r[2]),html:rich(r[2]),options:r[3].map(P),answer:1}));
+  raw.filter(r=>r[0]===idx).forEach(r=>hw.push({type:'mcq',level:r[1],degree:1,text:P(r[2]),html:rich(r[2]),options:r[3].map(P),answer:1}));
   ts.filter(t=>t[0]==='mcq').forEach(t=>{const o=t[5].map(P),k=o.indexOf(P(t[6]));if(k>=0)hw.push({type:'mcq',level:t[2]==='L'?1:t[2]==='M'?2:3,degree:1,text:P(t[4]),html:rich(t[4]),options:o,answer:k+1})});
   const id=track+'-s'+sem+'-'+L.id.replace(/[^0-9]+/g,'-');
   const old=bank.find(b=>b.id===id||(b.track===track&&b.lesson&&b.lesson.endsWith(L.title)));
