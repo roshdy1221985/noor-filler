@@ -11,6 +11,7 @@
 - `bank.json` — البنك: كل درس فيه حقول التحضير + `homework`.
 - `curriculum.json` — خريطة المنهج (١٠ مسارات: g05…g10, g11b, g11a, g12b, g12a).
 - `tools/import-review.js` — يسحب دروس ملف مراجعة تفاعلية للبنك.
+- `tools/import-app.js` — زيه بس لملفات الوحدات المنشورة في ريبوهات التطبيقات (unitN.html المشفّرة، زي 11-advanced-math). بيحتاج playwright.
 - `tools/build.js` — يبني `filler.js` ويحدّث الزر الكامل في `index.html`.
 
 ## أوامر رشدي المعتادة

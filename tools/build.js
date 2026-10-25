@@ -20,5 +20,5 @@ function finish(code){ if(out===null||code){out=code}
   idx=idx.replace(/<a class="bm alt" href="[^"]*"/,()=> '<a class="bm alt" href="'+esc(bm)+'"');
   fs.writeFileSync(R('index.html'),idx);
   const hw=bank.reduce((a,b)=>a+(b.homework||[]).length,0);
-  console.log('✔ filler.js اتبنى: '+bank.length+' درس، '+hw+' سؤال واجب، '+Math.round(out.length/1024)+' KB');
+  console.log('✔ filler.js اتبنى: '+bank.length+' درس، '+hw+' سؤال واجب، '+Math.round(Buffer.byteLength(out,'utf8')/1024)+' KB');
 }
