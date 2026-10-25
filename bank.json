@@ -33,6 +33,7 @@
     "level": 1,
     "degree": 1,
     "text": "قيمة العدد هـ مقرّبة إلى ثلاث منازل عشرية:",
+    "html": "قيمة العدد <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">هـ</mi></math> مقرّبة إلى ثلاث منازل عشرية:",
     "options": [
      "٢٫٧١٨",
      "٢٫١٧٨",
@@ -46,6 +47,7 @@
     "level": 1,
     "degree": 1,
     "text": "منحنى ص = هـ^س يقطع محور الصادات عند النقطة:",
+    "html": "منحنى <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><msup><mi mathvariant=\"normal\">هـ</mi><mrow><mi mathvariant=\"normal\">س</mi></mrow></msup></math> يقطع محور الصادات عند النقطة:",
     "options": [
      "(٠، ١)",
      "(١، ٠)",
@@ -59,6 +61,7 @@
     "level": 1,
     "degree": 1,
     "text": "أيّ العبارات صحيحة للدالة ص = هـ^س؟",
+    "html": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">أي</mi><mo>ّ</mo></math> العبارات صحيحة للدالة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><msup><mi mathvariant=\"normal\">هـ</mi><mrow><mi mathvariant=\"normal\">س</mi></mrow></msup><mo>؟</mo></math>",
     "options": [
      "قيمها موجبة دائمًا",
      "تقطع محور السينات عند س = ٠",
@@ -72,6 +75,7 @@
     "level": 1,
     "degree": 1,
     "text": "هـ³ × هـ⁵ =",
+    "html": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><msup><mi mathvariant=\"normal\">هـ</mi><mrow><mn>٣</mn></mrow></msup><mo>×</mo><msup><mi mathvariant=\"normal\">هـ</mi><mrow><mn>٥</mn></mrow></msup><mo>=</mo></math>",
     "options": [
      "هـ⁸",
      "هـ¹⁵",
@@ -85,6 +89,7 @@
     "level": 1,
     "degree": 1,
     "text": "(هـ^(٧س))/(هـ^(٢س)) =",
+    "html": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mfrac><mrow><msup><mi mathvariant=\"normal\">هـ</mi><mrow><mn>٧</mn><mi mathvariant=\"normal\">س</mi></mrow></msup></mrow><mrow><msup><mi mathvariant=\"normal\">هـ</mi><mrow><mn>٢</mn><mi mathvariant=\"normal\">س</mi></mrow></msup></mrow></mfrac><mo>=</mo></math>",
     "options": [
      "هـ^(٥س)",
      "هـ^(٩س)",
@@ -98,6 +103,7 @@
     "level": 1,
     "degree": 1,
     "text": "(هـ^(٢س))³ =",
+    "html": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mo>(</mo><msup><mi mathvariant=\"normal\">هـ</mi><mrow><mn>٢</mn><mi mathvariant=\"normal\">س</mi></mrow></msup><msup><mo>)</mo><mrow><mn>٣</mn></mrow></msup><mo>=</mo></math>",
     "options": [
      "هـ^(٦س)",
      "هـ^(٥س)",
@@ -111,6 +117,7 @@
     "level": 2,
     "degree": 1,
     "text": "أبسط صورة للمقدار (هـ^(س + ٣) × هـ^(٢س − ١))/(هـ^س)",
+    "html": "أبسط صورة للمقدار <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mfrac><mrow><msup><mi mathvariant=\"normal\">هـ</mi><mrow><mi mathvariant=\"normal\">س</mi><mo>+</mo><mn>٣</mn></mrow></msup><mo>×</mo><msup><mi mathvariant=\"normal\">هـ</mi><mrow><mn>٢</mn><mi mathvariant=\"normal\">س</mi><mo>−</mo><mn>١</mn></mrow></msup></mrow><mrow><msup><mi mathvariant=\"normal\">هـ</mi><mrow><mi mathvariant=\"normal\">س</mi></mrow></msup></mrow></mfrac></math>",
     "options": [
      "هـ^(٢س + ٢)",
      "هـ^(٣س + ٢)",
@@ -124,6 +131,7 @@
     "level": 2,
     "degree": 1,
     "text": "منحنى الدالة ص = هـ^(−س):",
+    "html": "منحنى الدالة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><msup><mi mathvariant=\"normal\">هـ</mi><mrow><mo>−</mo><mi mathvariant=\"normal\">س</mi></mrow></msup><mo>:</mo></math>",
     "options": [
      "متناقص ويمر بالنقطة (٠، ١)",
      "متزايد ويمر بالنقطة (٠، ١)",
@@ -137,6 +145,7 @@
     "level": 2,
     "degree": 1,
     "text": "خط التقارب الأفقي لمنحنى ص = ٣ + هـ^س:",
+    "html": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">خط</mi></math> التقارب الأفقي لمنحنى <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><mn>٣</mn><mo>+</mo><msup><mi mathvariant=\"normal\">هـ</mi><mrow><mi mathvariant=\"normal\">س</mi></mrow></msup><mo>:</mo></math>",
     "options": [
      "ص = ٣",
      "ص = ٠",
@@ -150,6 +159,7 @@
     "level": 2,
     "degree": 1,
     "text": "قيمة هـ^٠٫٥ مقرّبة إلى منزلتين عشريتين:",
+    "html": "قيمة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><msup><mi mathvariant=\"normal\">هـ</mi><mrow><mn>٠٫٥</mn></mrow></msup></math> مقرّبة إلى منزلتين عشريتين:",
     "options": [
      "١٫٦٥",
      "١٫٣٦",
@@ -163,6 +173,7 @@
     "level": 1,
     "degree": 1,
     "text": "يُعطى عدد البكتيريا بالعلاقة ع = ٢٠٠هـ^(٠٫١ن). العدد الابتدائي (عندما ن = ٠):",
+    "html": "يُعطى عدد البكتيريا بالعلاقة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ع</mi><mo>=</mo><mn>٢٠٠</mn><msup><mi mathvariant=\"normal\">هـ</mi><mrow><mn>٠٫١</mn><mi mathvariant=\"normal\">ن</mi></mrow></msup><mo>.</mo></math> العدد الابتدائي (عندما <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ن</mi><mo>=</mo><mn>٠</mn><mo>)</mo><mo>:</mo></math>",
     "options": [
      "٢٠٠",
      "٢٢٠",
@@ -176,6 +187,7 @@
     "level": 2,
     "degree": 1,
     "text": "في العلاقة ع = ٢٠٠هـ^(٠٫١ن)، قيمة ع عندما ن = ١٠ لأقرب عدد صحيح:",
+    "html": "في العلاقة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ع</mi><mo>=</mo><mn>٢٠٠</mn><msup><mi mathvariant=\"normal\">هـ</mi><mrow><mn>٠٫١</mn><mi mathvariant=\"normal\">ن</mi></mrow></msup><mo>،</mo></math> قيمة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ع</mi></math> عندما <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ن</mi><mo>=</mo><mn>١٠</mn></math> لأقرب عدد صحيح:",
     "options": [
      "٥٤٤",
      "٢٠٠٠",
@@ -189,6 +201,7 @@
     "level": 1,
     "degree": 1,
     "text": "قيمة هـ⁰ تساوي:",
+    "html": "قيمة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><msup><mi mathvariant=\"normal\">هـ</mi><mrow><mn>٠</mn></mrow></msup></math> تساوي:",
     "options": [
      "١",
      "٠",
@@ -202,6 +215,7 @@
     "level": 1,
     "degree": 1,
     "text": "قيمة ٢هـ^١٫١ مقرّبة إلى منزلة عشرية واحدة:",
+    "html": "قيمة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mn>٢</mn><msup><mi mathvariant=\"normal\">هـ</mi><mrow><mn>١٫١</mn></mrow></msup></math> مقرّبة إلى منزلة عشرية واحدة:",
     "options": [
      "٦٫٠",
      "٥٫٤",
@@ -247,6 +261,7 @@
     "level": 1,
     "degree": 1,
     "text": "لط ١ =",
+    "html": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">لط</mi><mn>١</mn><mo>=</mo></math>",
     "options": [
      "٠",
      "١",
@@ -260,6 +275,7 @@
     "level": 1,
     "degree": 1,
     "text": "لط هـ =",
+    "html": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">لط</mi><mi mathvariant=\"normal\">هـ</mi><mo>=</mo></math>",
     "options": [
      "١",
      "٠",
@@ -273,6 +289,7 @@
     "level": 1,
     "degree": 1,
     "text": "لط هـ⁵ =",
+    "html": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">لط</mi><msup><mi mathvariant=\"normal\">هـ</mi><mrow><mn>٥</mn></mrow></msup><mo>=</mo></math>",
     "options": [
      "٥",
      "هـ⁵",
@@ -286,6 +303,7 @@
     "level": 1,
     "degree": 1,
     "text": "هـ^(لط ٧) =",
+    "html": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><msup><mi mathvariant=\"normal\">هـ</mi><mrow><mi mathvariant=\"normal\">لط</mi><mn>٧</mn></mrow></msup><mo>=</mo></math>",
     "options": [
      "٧",
      "هـ⁷",
@@ -299,6 +317,7 @@
     "level": 1,
     "degree": 1,
     "text": "لط ٢ + لط ٥ =",
+    "html": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">لط</mi><mn>٢</mn><mo>+</mo><mi mathvariant=\"normal\">لط</mi><mn>٥</mn><mo>=</mo></math>",
     "options": [
      "لط ١٠",
      "لط ٧",
@@ -312,6 +331,7 @@
     "level": 1,
     "degree": 1,
     "text": "لط ٢٤ − لط ٣ =",
+    "html": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">لط</mi><mn>٢٤</mn><mo>−</mo><mi mathvariant=\"normal\">لط</mi><mn>٣</mn><mo>=</mo></math>",
     "options": [
      "لط ٨",
      "لط ٢١",
@@ -325,6 +345,7 @@
     "level": 1,
     "degree": 1,
     "text": "٣ لط ٢ =",
+    "html": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mn>٣</mn><mi mathvariant=\"normal\">لط</mi><mn>٢</mn><mo>=</mo></math>",
     "options": [
      "لط ٨",
      "لط ٦",
@@ -338,6 +359,7 @@
     "level": 2,
     "degree": 1,
     "text": "لط ١/هـ² =",
+    "html": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">لط</mi><mfrac><mrow><mn>١</mn></mrow><mrow><msup><mi mathvariant=\"normal\">هـ</mi><mrow><mn>٢</mn></mrow></msup></mrow></mfrac><mo>=</mo></math>",
     "options": [
      "−٢",
      "٢",
@@ -351,6 +373,7 @@
     "level": 2,
     "degree": 1,
     "text": "لط √هـ =",
+    "html": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">لط</mi><msqrt><mi mathvariant=\"normal\">هـ</mi></msqrt><mo>=</mo></math>",
     "options": [
      "١/٢",
      "٢",
@@ -364,6 +387,7 @@
     "level": 3,
     "degree": 1,
     "text": "لط ∛هـ² =",
+    "html": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">لط</mi><mroot><mrow><msup><mi mathvariant=\"normal\">هـ</mi><mrow><mn>٢</mn></mrow></msup></mrow><mn>٣</mn></mroot><mo>=</mo></math>",
     "options": [
      "٢/٣",
      "٣/٢",
@@ -377,6 +401,7 @@
     "level": 1,
     "degree": 1,
     "text": "مجال الدالة د(س) = لط س:",
+    "html": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">مجال</mi></math> الدالة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">د</mi><mo>(</mo><mi mathvariant=\"normal\">س</mi><mo>)</mo><mo>=</mo><mi mathvariant=\"normal\">لط</mi><mi mathvariant=\"normal\">س</mi><mo>:</mo></math>",
     "options": [
      "س > ٠",
      "س ≥ ٠",
@@ -390,6 +415,7 @@
     "level": 2,
     "degree": 1,
     "text": "مجال الدالة د(س) = لط (س − ٣):",
+    "html": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">مجال</mi></math> الدالة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">د</mi><mo>(</mo><mi mathvariant=\"normal\">س</mi><mo>)</mo><mo>=</mo><mi mathvariant=\"normal\">لط</mi><mo>(</mo><mi mathvariant=\"normal\">س</mi><mo>−</mo><mn>٣</mn><mo>)</mo><mo>:</mo></math>",
     "options": [
      "س > ٣",
      "س > ٠",
@@ -403,6 +429,7 @@
     "level": 2,
     "degree": 1,
     "text": "إذا كانت ٠ < س < ١ فإن:",
+    "html": "إذا كانت <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mn>٠</mn><mo>&lt;</mo><mi mathvariant=\"normal\">س</mi><mo>&lt;</mo><mn>١</mn></math> فإن:",
     "options": [
      "لط س < ٠",
      "لط س > ٠",
@@ -416,6 +443,7 @@
     "level": 2,
     "degree": 1,
     "text": "بدون الحاسبة: لط هـ⁴ + ٢ لط هـ³ =",
+    "html": "بدون الحاسبة: <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">لط</mi><msup><mi mathvariant=\"normal\">هـ</mi><mrow><mn>٤</mn></mrow></msup><mo>+</mo><mn>٢</mn><mi mathvariant=\"normal\">لط</mi><msup><mi mathvariant=\"normal\">هـ</mi><mrow><mn>٣</mn></mrow></msup><mo>=</mo></math>",
     "options": [
      "١٠",
      "٢٤",
@@ -429,6 +457,7 @@
     "level": 2,
     "degree": 1,
     "text": "هـ^(٢ لط ٣) =",
+    "html": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><msup><mi mathvariant=\"normal\">هـ</mi><mrow><mn>٢</mn><mi mathvariant=\"normal\">لط</mi><mn>٣</mn></mrow></msup><mo>=</mo></math>",
     "options": [
      "٩",
      "٦",
@@ -442,6 +471,7 @@
     "level": 1,
     "degree": 1,
     "text": "معكوس الدالة د(س) = هـ^س هو:",
+    "html": "معكوس الدالة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">د</mi><mo>(</mo><mi mathvariant=\"normal\">س</mi><mo>)</mo><mo>=</mo><msup><mi mathvariant=\"normal\">هـ</mi><mrow><mi mathvariant=\"normal\">س</mi></mrow></msup></math> هو:",
     "options": [
      "د⁻¹(س) = لط س",
      "د⁻¹(س) = ١/(هـ^س)",
@@ -455,6 +485,7 @@
     "level": 1,
     "degree": 1,
     "text": "منحنيا ص = هـ^س و ص = لط س كل منهما انعكاس للآخر حول:",
+    "html": "منحنيا <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><msup><mi mathvariant=\"normal\">هـ</mi><mrow><mi mathvariant=\"normal\">س</mi></mrow></msup></math> و <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><mi mathvariant=\"normal\">لط</mi><mi mathvariant=\"normal\">س</mi></math> كل منهما انعكاس للآخر حول:",
     "options": [
      "المستقيم ص = س",
      "محور السينات",
@@ -468,6 +499,7 @@
     "level": 2,
     "degree": 1,
     "text": "معكوس الدالة د(س) = هـ^(٣س):",
+    "html": "معكوس الدالة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">د</mi><mo>(</mo><mi mathvariant=\"normal\">س</mi><mo>)</mo><mo>=</mo><msup><mi mathvariant=\"normal\">هـ</mi><mrow><mn>٣</mn><mi mathvariant=\"normal\">س</mi></mrow></msup><mo>:</mo></math>",
     "options": [
      "د⁻¹(س) = ١/٣ لط س",
      "د⁻¹(س) = ٣ لط س",
@@ -481,6 +513,7 @@
     "level": 3,
     "degree": 1,
     "text": "معكوس الدالة د(س) = لط ٢س:",
+    "html": "معكوس الدالة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">د</mi><mo>(</mo><mi mathvariant=\"normal\">س</mi><mo>)</mo><mo>=</mo><mi mathvariant=\"normal\">لط</mi><mn>٢</mn><mi mathvariant=\"normal\">س</mi><mo>:</mo></math>",
     "options": [
      "د⁻¹(س) = ١/٢هـ^س",
      "د⁻¹(س) = ٢هـ^س",
@@ -494,6 +527,7 @@
     "level": 3,
     "degree": 1,
     "text": "معكوس الدالة د(س) = هـ^س + ٤:",
+    "html": "معكوس الدالة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">د</mi><mo>(</mo><mi mathvariant=\"normal\">س</mi><mo>)</mo><mo>=</mo><msup><mi mathvariant=\"normal\">هـ</mi><mrow><mi mathvariant=\"normal\">س</mi></mrow></msup><mo>+</mo><mn>٤</mn><mo>:</mo></math>",
     "options": [
      "د⁻¹(س) = لط (س − ٤)",
      "د⁻¹(س) = لط س − ٤",
@@ -507,6 +541,7 @@
     "level": 2,
     "degree": 1,
     "text": "أبسط صورة للمقدار لط ١٢ − ٢ لط ٢ + لط ٣:",
+    "html": "أبسط صورة للمقدار <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">لط</mi><mn>١٢</mn><mo>−</mo><mn>٢</mn><mi mathvariant=\"normal\">لط</mi><mn>٢</mn><mo>+</mo><mi mathvariant=\"normal\">لط</mi><mn>٣</mn><mo>:</mo></math>",
     "options": [
      "لط ٩",
      "لط ١٣",
@@ -520,6 +555,7 @@
     "level": 2,
     "degree": 1,
     "text": "لط س + لط (س + ١) =",
+    "html": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">لط</mi><mi mathvariant=\"normal\">س</mi><mo>+</mo><mi mathvariant=\"normal\">لط</mi><mo>(</mo><mi mathvariant=\"normal\">س</mi><mo>+</mo><mn>١</mn><mo>)</mo><mo>=</mo></math>",
     "options": [
      "لط (س² + س)",
      "لط (٢س + ١)",
@@ -533,6 +569,7 @@
     "level": 1,
     "degree": 1,
     "text": "لط هـ =",
+    "html": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">لط</mi><mi mathvariant=\"normal\">هـ</mi><mo>=</mo></math>",
     "options": [
      "١",
      "٠",
@@ -546,6 +583,7 @@
     "level": 1,
     "degree": 1,
     "text": "مجال الدالة د(س) = لط (٢س − ٦):",
+    "html": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">مجال</mi></math> الدالة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">د</mi><mo>(</mo><mi mathvariant=\"normal\">س</mi><mo>)</mo><mo>=</mo><mi mathvariant=\"normal\">لط</mi><mo>(</mo><mn>٢</mn><mi mathvariant=\"normal\">س</mi><mo>−</mo><mn>٦</mn><mo>)</mo><mo>:</mo></math>",
     "options": [
      "س > ٣",
      "س > ٦",
@@ -591,6 +629,7 @@
     "level": 1,
     "degree": 1,
     "text": "الصيغة اللوغاريتمية للعبارة ص = هـ⁴:",
+    "html": "الصيغة اللوغاريتمية للعبارة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><msup><mi mathvariant=\"normal\">هـ</mi><mrow><mn>٤</mn></mrow></msup><mo>:</mo></math>",
     "options": [
      "لط ص = ٤",
      "لط ٤ = ص",
@@ -604,6 +643,7 @@
     "level": 1,
     "degree": 1,
     "text": "الصيغة الأسية للعبارة لط ك = ٢٫٥:",
+    "html": "الصيغة الأسية للعبارة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">لط</mi><mi mathvariant=\"normal\">ك</mi><mo>=</mo><mn>٢٫٥</mn><mo>:</mo></math>",
     "options": [
      "ك = هـ^٢٫٥",
      "ك = ٢٫٥هـ",
@@ -617,6 +657,7 @@
     "level": 2,
     "degree": 1,
     "text": "الصيغة اللوغاريتمية للعبارة م = ١/هـ³:",
+    "html": "الصيغة اللوغاريتمية للعبارة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">م</mi><mo>=</mo><mfrac><mrow><mn>١</mn></mrow><mrow><msup><mi mathvariant=\"normal\">هـ</mi><mrow><mn>٣</mn></mrow></msup></mrow></mfrac><mo>:</mo></math>",
     "options": [
      "لط م = −٣",
      "لط م = ٣",
@@ -630,6 +671,7 @@
     "level": 1,
     "degree": 1,
     "text": "إذا كان لط س = ٣ فإن س =",
+    "html": "إذا كان <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">لط</mi><mi mathvariant=\"normal\">س</mi><mo>=</mo><mn>٣</mn></math> فإن <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">س</mi><mo>=</mo></math>",
     "options": [
      "هـ³",
      "٣هـ",
@@ -643,6 +685,7 @@
     "level": 1,
     "degree": 1,
     "text": "إذا كان هـ^س = ٩ فإن س =",
+    "html": "إذا كان <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><msup><mi mathvariant=\"normal\">هـ</mi><mrow><mi mathvariant=\"normal\">س</mi></mrow></msup><mo>=</mo><mn>٩</mn></math> فإن <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">س</mi><mo>=</mo></math>",
     "options": [
      "لط ٩",
      "٩/هـ",
@@ -656,6 +699,7 @@
     "level": 2,
     "degree": 1,
     "text": "إذا كان لط ٣س = ٦ فإن س =",
+    "html": "إذا كان <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">لط</mi><mn>٣</mn><mi mathvariant=\"normal\">س</mi><mo>=</mo><mn>٦</mn></math> فإن <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">س</mi><mo>=</mo></math>",
     "options": [
      "١/٣هـ⁶",
      "هـ²",
@@ -669,6 +713,7 @@
     "level": 2,
     "degree": 1,
     "text": "إذا كان ٢هـ^(س/٣) = ١٤ فإن س =",
+    "html": "إذا كان <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mn>٢</mn><msup><mi mathvariant=\"normal\">هـ</mi><mrow><mfrac><mrow><mi mathvariant=\"normal\">س</mi></mrow><mrow><mn>٣</mn></mrow></mfrac></mrow></msup><mo>=</mo><mn>١٤</mn></math> فإن <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">س</mi><mo>=</mo></math>",
     "options": [
      "٣ لط ٧",
      "١/٣ لط ٧",
@@ -682,6 +727,7 @@
     "level": 2,
     "degree": 1,
     "text": "إذا كان لط ص² = ٨ حيث ص > ٠ فإن ص =",
+    "html": "إذا كان <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">لط</mi><msup><mi mathvariant=\"normal\">ص</mi><mrow><mn>٢</mn></mrow></msup><mo>=</mo><mn>٨</mn></math> حيث <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>&gt;</mo><mn>٠</mn></math> فإن <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo></math>",
     "options": [
      "هـ⁴",
      "هـ⁸",
@@ -695,6 +741,7 @@
     "level": 1,
     "degree": 1,
     "text": "أبسط صيغة أسية للعبارة لط ق = ٣ر:",
+    "html": "أبسط صيغة أسية للعبارة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">لط</mi><mi mathvariant=\"normal\">ق</mi><mo>=</mo><mn>٣</mn><mi mathvariant=\"normal\">ر</mi><mo>:</mo></math>",
     "options": [
      "ق = هـ^(٣ر)",
      "ق = ٣هـ^ر",
@@ -708,6 +755,7 @@
     "level": 3,
     "degree": 1,
     "text": "إذا كان ٥ − لط (س + ٢) = ١ فإن س =",
+    "html": "إذا كان <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mn>٥</mn><mo>−</mo><mi mathvariant=\"normal\">لط</mi><mo>(</mo><mi mathvariant=\"normal\">س</mi><mo>+</mo><mn>٢</mn><mo>)</mo><mo>=</mo><mn>١</mn></math> فإن <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">س</mi><mo>=</mo></math>",
     "options": [
      "هـ⁴ − ٢",
      "هـ⁶ − ٢",
@@ -721,6 +769,7 @@
     "level": 1,
     "degree": 1,
     "text": "الصيغة اللوغاريتمية للعبارة ص = هـ³:",
+    "html": "الصيغة اللوغاريتمية للعبارة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><msup><mi mathvariant=\"normal\">هـ</mi><mrow><mn>٣</mn></mrow></msup><mo>:</mo></math>",
     "options": [
      "لط ص = ٣",
      "لط ٣ = ص",
@@ -734,6 +783,7 @@
     "level": 1,
     "degree": 1,
     "text": "إذا كان لط (س − ١) = ٢ فإن س =",
+    "html": "إذا كان <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">لط</mi><mo>(</mo><mi mathvariant=\"normal\">س</mi><mo>−</mo><mn>١</mn><mo>)</mo><mo>=</mo><mn>٢</mn></math> فإن <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">س</mi><mo>=</mo></math>",
     "options": [
      "هـ² + ١",
      "هـ² − ١",
@@ -779,6 +829,7 @@
     "level": 1,
     "degree": 1,
     "text": "حل المعادلة هـ^س = ٥ مقرّبًا إلى منزلتين عشريتين:",
+    "html": "حل المعادلة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><msup><mi mathvariant=\"normal\">هـ</mi><mrow><mi mathvariant=\"normal\">س</mi></mrow></msup><mo>=</mo><mn>٥</mn></math> مقرّبًا إلى منزلتين عشريتين:",
     "options": [
      "١٫٦١",
      "٠٫٧٠",
@@ -792,6 +843,7 @@
     "level": 1,
     "degree": 1,
     "text": "حل المعادلة لط س = ٢ مقرّبًا إلى منزلة عشرية واحدة:",
+    "html": "حل المعادلة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">لط</mi><mi mathvariant=\"normal\">س</mi><mo>=</mo><mn>٢</mn></math> مقرّبًا إلى منزلة عشرية واحدة:",
     "options": [
      "٧٫٤",
      "٠٫٧",
@@ -805,6 +857,7 @@
     "level": 2,
     "degree": 1,
     "text": "حل المعادلة لط (س + ٤) = ١ بدلالة هـ:",
+    "html": "حل المعادلة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">لط</mi><mo>(</mo><mi mathvariant=\"normal\">س</mi><mo>+</mo><mn>٤</mn><mo>)</mo><mo>=</mo><mn>١</mn></math> بدلالة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">هـ</mi><mo>:</mo></math>",
     "options": [
      "س = هـ − ٤",
      "س = هـ + ٤",
@@ -818,6 +871,7 @@
     "level": 2,
     "degree": 1,
     "text": "حل المعادلة ٣هـ^(٢س) = ٣٠ مقرّبًا إلى منزلتين عشريتين:",
+    "html": "حل المعادلة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mn>٣</mn><msup><mi mathvariant=\"normal\">هـ</mi><mrow><mn>٢</mn><mi mathvariant=\"normal\">س</mi></mrow></msup><mo>=</mo><mn>٣٠</mn></math> مقرّبًا إلى منزلتين عشريتين:",
     "options": [
      "١٫١٥",
      "١٫٧٠",
@@ -831,6 +885,7 @@
     "level": 3,
     "degree": 1,
     "text": "حلول المعادلة هـ^(٢س) − ٥هـ^س + ٦ = ٠:",
+    "html": "حلول المعادلة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><msup><mi mathvariant=\"normal\">هـ</mi><mrow><mn>٢</mn><mi mathvariant=\"normal\">س</mi></mrow></msup><mo>−</mo><mn>٥</mn><msup><mi mathvariant=\"normal\">هـ</mi><mrow><mi mathvariant=\"normal\">س</mi></mrow></msup><mo>+</mo><mn>٦</mn><mo>=</mo><mn>٠</mn><mo>:</mo></math>",
     "options": [
      "س = لط ٢ أو س = لط ٣",
      "س = ٢ أو س = ٣",
@@ -844,6 +899,7 @@
     "level": 2,
     "degree": 1,
     "text": "حل المعادلة لط س + لط ٤ = لط ٢٠:",
+    "html": "حل المعادلة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">لط</mi><mi mathvariant=\"normal\">س</mi><mo>+</mo><mi mathvariant=\"normal\">لط</mi><mn>٤</mn><mo>=</mo><mi mathvariant=\"normal\">لط</mi><mn>٢٠</mn><mo>:</mo></math>",
     "options": [
      "٥",
      "١٦",
@@ -857,6 +913,7 @@
     "level": 3,
     "degree": 1,
     "text": "حل المعادلة ٢ لط س = لط (س + ٦):",
+    "html": "حل المعادلة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mn>٢</mn><mi mathvariant=\"normal\">لط</mi><mi mathvariant=\"normal\">س</mi><mo>=</mo><mi mathvariant=\"normal\">لط</mi><mo>(</mo><mi mathvariant=\"normal\">س</mi><mo>+</mo><mn>٦</mn><mo>)</mo><mo>:</mo></math>",
     "options": [
      "٣",
      "−٢ أو ٣",
@@ -870,6 +927,7 @@
     "level": 1,
     "degree": 1,
     "text": "حل المعادلة هـ^(٣س − ١) = هـ^(س + ٥):",
+    "html": "حل المعادلة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><msup><mi mathvariant=\"normal\">هـ</mi><mrow><mn>٣</mn><mi mathvariant=\"normal\">س</mi><mo>−</mo><mn>١</mn></mrow></msup><mo>=</mo><msup><mi mathvariant=\"normal\">هـ</mi><mrow><mi mathvariant=\"normal\">س</mi><mo>+</mo><mn>٥</mn></mrow></msup><mo>:</mo></math>",
     "options": [
      "٣",
      "٢",
@@ -883,6 +941,7 @@
     "level": 3,
     "degree": 1,
     "text": "حل المعادلة هـ^(٢س) = ٤هـ^(س + ١) بدلالة اللوغاريتم الطبيعي:",
+    "html": "حل المعادلة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><msup><mi mathvariant=\"normal\">هـ</mi><mrow><mn>٢</mn><mi mathvariant=\"normal\">س</mi></mrow></msup><mo>=</mo><mn>٤</mn><msup><mi mathvariant=\"normal\">هـ</mi><mrow><mi mathvariant=\"normal\">س</mi><mo>+</mo><mn>١</mn></mrow></msup></math> بدلالة اللوغاريتم الطبيعي:",
     "options": [
      "س = ١ + لط ٤",
      "س = لط ٤ − ١",
@@ -896,6 +955,7 @@
     "level": 1,
     "degree": 1,
     "text": "حل المعادلة لط (٢س − ١) = ٠:",
+    "html": "حل المعادلة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">لط</mi><mo>(</mo><mn>٢</mn><mi mathvariant=\"normal\">س</mi><mo>−</mo><mn>١</mn><mo>)</mo><mo>=</mo><mn>٠</mn><mo>:</mo></math>",
     "options": [
      "١",
      "١/٢",
@@ -909,6 +969,7 @@
     "level": 3,
     "degree": 1,
     "text": "تبرد قهوة وفق العلاقة د = ٢٠ + ٦٠هـ^(−٠٫١ن) حيث ن بالدقائق. بعد كم دقيقة تصبح د = ٥٠؟ (لأقرب منزلة عشرية)",
+    "html": "تبرد قهوة وفق العلاقة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">د</mi><mo>=</mo><mn>٢٠</mn><mo>+</mo><mn>٦٠</mn><msup><mi mathvariant=\"normal\">هـ</mi><mrow><mo>−</mo><mn>٠٫١</mn><mi mathvariant=\"normal\">ن</mi></mrow></msup></math> حيث <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ن</mi></math> بالدقائق. بعد <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">كم</mi></math> دقيقة تصبح <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">د</mi><mo>=</mo><mn>٥٠</mn><mo>؟</mo></math> (لأقرب منزلة عشرية)",
     "options": [
      "٦٫٩",
      "٥٫٠",
@@ -922,6 +983,7 @@
     "level": 2,
     "degree": 1,
     "text": "حل المعادلة هـ^س = −٣:",
+    "html": "حل المعادلة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><msup><mi mathvariant=\"normal\">هـ</mi><mrow><mi mathvariant=\"normal\">س</mi></mrow></msup><mo>=</mo><mo>−</mo><mn>٣</mn><mo>:</mo></math>",
     "options": [
      "لا يوجد حل حقيقي",
      "س = −لط ٣",
@@ -935,6 +997,7 @@
     "level": 2,
     "degree": 1,
     "text": "حل المعادلة ٤ لط س = ١٢ بدلالة هـ:",
+    "html": "حل المعادلة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mn>٤</mn><mi mathvariant=\"normal\">لط</mi><mi mathvariant=\"normal\">س</mi><mo>=</mo><mn>١٢</mn></math> بدلالة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">هـ</mi><mo>:</mo></math>",
     "options": [
      "هـ³",
      "هـ¹²",
@@ -948,6 +1011,7 @@
     "level": 1,
     "degree": 1,
     "text": "حل المعادلة لط س = ٣ هو:",
+    "html": "حل المعادلة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">لط</mi><mi mathvariant=\"normal\">س</mi><mo>=</mo><mn>٣</mn></math> هو:",
     "options": [
      "هـ³",
      "٣هـ",
@@ -961,6 +1025,7 @@
     "level": 1,
     "degree": 1,
     "text": "حل المعادلة لط س + لط ٥ = لط ٣٠:",
+    "html": "حل المعادلة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">لط</mi><mi mathvariant=\"normal\">س</mi><mo>+</mo><mi mathvariant=\"normal\">لط</mi><mn>٥</mn><mo>=</mo><mi mathvariant=\"normal\">لط</mi><mn>٣٠</mn><mo>:</mo></math>",
     "options": [
      "٦",
      "٢٥",
@@ -1006,6 +1071,7 @@
     "level": 1,
     "degree": 1,
     "text": "لتحويل ص = ك س^ن إلى الصيغة صـ = مسـ + جـ نستخدم:",
+    "html": "لتحويل <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><mi mathvariant=\"normal\">ك</mi><msup><mi mathvariant=\"normal\">س</mi><mrow><mi mathvariant=\"normal\">ن</mi></mrow></msup></math> إلى الصيغة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><mi mathvariant=\"normal\">م</mi><mi mathvariant=\"normal\">س</mi><mo>+</mo><mi mathvariant=\"normal\">جـ</mi></math> نستخدم:",
     "options": [
      "صـ = لط ص ، سـ = لط س",
      "صـ = لط ص ، سـ = س",
@@ -1019,6 +1085,7 @@
     "level": 1,
     "degree": 1,
     "text": "لتحويل ص = ك أ^س إلى صيغة خطية نستخدم:",
+    "html": "لتحويل <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><mi mathvariant=\"normal\">ك</mi><msup><mi mathvariant=\"normal\">أ</mi><mrow><mi mathvariant=\"normal\">س</mi></mrow></msup></math> إلى صيغة خطية نستخدم:",
     "options": [
      "صـ = لط ص ، سـ = س",
      "صـ = لط ص ، سـ = لط س",
@@ -1032,6 +1099,7 @@
     "level": 2,
     "degree": 1,
     "text": "عند تحويل ص = ٥س³ إلى صيغة خطية يكون:",
+    "html": "عند تحويل <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><mn>٥</mn><msup><mi mathvariant=\"normal\">س</mi><mrow><mn>٣</mn></mrow></msup></math> إلى صيغة خطية يكون:",
     "options": [
      "م = ٣ ، جـ = لط ٥",
      "م = ٥ ، جـ = لط ٣",
@@ -1045,6 +1113,7 @@
     "level": 2,
     "degree": 1,
     "text": "عند تحويل ص = ٢هـ^(٤س) حيث صـ = لط ص ، سـ = س يكون:",
+    "html": "عند تحويل <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><mn>٢</mn><msup><mi mathvariant=\"normal\">هـ</mi><mrow><mn>٤</mn><mi mathvariant=\"normal\">س</mi></mrow></msup></math> حيث <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><mi mathvariant=\"normal\">لط</mi><mi mathvariant=\"normal\">ص</mi><mo>،</mo><mi mathvariant=\"normal\">س</mi><mo>=</mo><mi mathvariant=\"normal\">س</mi></math> يكون:",
     "options": [
      "م = ٤ ، جـ = لط ٢",
      "م = ٢ ، جـ = ٤",
@@ -1058,6 +1127,7 @@
     "level": 2,
     "degree": 1,
     "text": "عند تحويل ص = ٣ × ٢^س إلى صيغة خطية، الميل م =",
+    "html": "عند تحويل <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><mn>٣</mn><mo>×</mo><msup><mn>٢</mn><mrow><mi mathvariant=\"normal\">س</mi></mrow></msup></math> إلى صيغة خطية، الميل <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">م</mi><mo>=</mo></math>",
     "options": [
      "لط ٢",
      "٢",
@@ -1071,6 +1141,7 @@
     "level": 2,
     "degree": 1,
     "text": "العلاقة ص = ٦/س² تتحول إلى:",
+    "html": "العلاقة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><mfrac><mrow><mn>٦</mn></mrow><mrow><msup><mi mathvariant=\"normal\">س</mi><mrow><mn>٢</mn></mrow></msup></mrow></mfrac></math> تتحول إلى:",
     "options": [
      "لط ص = −٢ لط س + لط ٦",
      "لط ص = ٢ لط س + لط ٦",
@@ -1084,6 +1155,7 @@
     "level": 3,
     "degree": 1,
     "text": "تقع النقاط (لط س ، لط ص) على مستقيم ميله ٢ ومقطعه الصادي لط ٧. العلاقة بين س ، ص:",
+    "html": "تقع النقاط <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mo>(</mo><mi mathvariant=\"normal\">لط</mi><mi mathvariant=\"normal\">س</mi><mo>،</mo><mi mathvariant=\"normal\">لط</mi><mi mathvariant=\"normal\">ص</mi><mo>)</mo></math> على مستقيم ميله <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mn>٢</mn></math> ومقطعه الصادي <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">لط</mi><mn>٧</mn><mo>.</mo></math> العلاقة بين <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">س</mi><mo>،</mo><mi mathvariant=\"normal\">ص</mi><mo>:</mo></math>",
     "options": [
      "ص = ٧س²",
      "ص = ٢س⁷",
@@ -1097,6 +1169,7 @@
     "level": 3,
     "degree": 1,
     "text": "تقع النقاط (س ، لط ص) على مستقيم ميله ٠٫٥ ومقطعه الصادي لط ٤. العلاقة:",
+    "html": "تقع النقاط <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mo>(</mo><mi mathvariant=\"normal\">س</mi><mo>،</mo><mi mathvariant=\"normal\">لط</mi><mi mathvariant=\"normal\">ص</mi><mo>)</mo></math> على مستقيم ميله <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mn>٠٫٥</mn></math> ومقطعه الصادي <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">لط</mi><mn>٤</mn><mo>.</mo></math> العلاقة:",
     "options": [
      "ص = ٤هـ^(٠٫٥س)",
      "ص = ٠٫٥هـ^(٤س)",
@@ -1110,6 +1183,7 @@
     "level": 1,
     "degree": 1,
     "text": "في الصيغة الخطية صـ = مسـ + جـ، الثابتان م ، جـ يتضمنان:",
+    "html": "في الصيغة الخطية <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><mi mathvariant=\"normal\">م</mi><mi mathvariant=\"normal\">س</mi><mo>+</mo><mi mathvariant=\"normal\">جـ</mi><mo>،</mo></math> الثابتان <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">م</mi><mo>،</mo><mi mathvariant=\"normal\">جـ</mi></math> يتضمنان:",
     "options": [
      "الثوابت الأصلية فقط",
      "المتغيرين س ، ص",
@@ -1123,6 +1197,7 @@
     "level": 2,
     "degree": 1,
     "text": "ص = هـ^(أ س + ب)، وعند التحويل صـ = لط ص ، سـ = س يكون:",
+    "html": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><msup><mi mathvariant=\"normal\">هـ</mi><mrow><mi mathvariant=\"normal\">أ</mi><mi mathvariant=\"normal\">س</mi><mo>+</mo><mi mathvariant=\"normal\">ب</mi></mrow></msup><mo>،</mo></math> وعند التحويل <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><mi mathvariant=\"normal\">لط</mi><mi mathvariant=\"normal\">ص</mi><mo>،</mo><mi mathvariant=\"normal\">س</mi><mo>=</mo><mi mathvariant=\"normal\">س</mi></math> يكون:",
     "options": [
      "م = أ ، جـ = ب",
      "م = ب ، جـ = أ",
@@ -1136,6 +1211,7 @@
     "level": 3,
     "degree": 1,
     "text": "ص = أ س^ب. إذا كان ميل المستقيم الناتج ١٫٥ ومقطعه ٠٫٧ فإن أ ≈",
+    "html": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><mi mathvariant=\"normal\">أ</mi><msup><mi mathvariant=\"normal\">س</mi><mrow><mi mathvariant=\"normal\">ب</mi></mrow></msup><mo>.</mo></math> إذا كان ميل المستقيم الناتج <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mn>١٫٥</mn></math> ومقطعه <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mn>٠٫٧</mn></math> فإن <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">أ</mi><mo>≈</mo></math>",
     "options": [
      "٢٫٠١",
      "٠٫٧٠",
@@ -1149,6 +1225,7 @@
     "level": 1,
     "degree": 1,
     "text": "لتحويل ص = ك أ^س إلى صيغة خطية نستخدم:",
+    "html": "لتحويل <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><mi mathvariant=\"normal\">ك</mi><msup><mi mathvariant=\"normal\">أ</mi><mrow><mi mathvariant=\"normal\">س</mi></mrow></msup></math> إلى صيغة خطية نستخدم:",
     "options": [
      "صـ = لط ص ، سـ = س",
      "صـ = لط ص ، سـ = لط س",
@@ -1162,6 +1239,7 @@
     "level": 1,
     "degree": 1,
     "text": "عند تحويل ص = ٥هـ^(−٢س) إلى صيغة خطية يكون الميل م:",
+    "html": "عند تحويل <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><mn>٥</mn><msup><mi mathvariant=\"normal\">هـ</mi><mrow><mo>−</mo><mn>٢</mn><mi mathvariant=\"normal\">س</mi></mrow></msup></math> إلى صيغة خطية يكون الميل <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">م</mi><mo>:</mo></math>",
     "options": [
      "−٢",
      "٢",
@@ -1206,6 +1284,7 @@
     "level": 1,
     "degree": 1,
     "text": "ء/ءس(س⁷) =",
+    "html": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mfrac><mrow><mi mathvariant=\"normal\">ء</mi></mrow><mrow><mi mathvariant=\"normal\">ء</mi><mi mathvariant=\"normal\">س</mi></mrow></mfrac><mo>(</mo><msup><mi mathvariant=\"normal\">س</mi><mrow><mn>٧</mn></mrow></msup><mo>)</mo><mo>=</mo></math>",
     "options": [
      "٧س⁶",
      "س⁶",
@@ -1219,6 +1298,7 @@
     "level": 1,
     "degree": 1,
     "text": "إذا كانت ص = ٩ فإن ءص/ءس =",
+    "html": "إذا كانت <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><mn>٩</mn></math> فإن <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mfrac><mrow><mi mathvariant=\"normal\">ء</mi><mi mathvariant=\"normal\">ص</mi></mrow><mrow><mi mathvariant=\"normal\">ء</mi><mi mathvariant=\"normal\">س</mi></mrow></mfrac><mo>=</mo></math>",
     "options": [
      "٠",
      "٩",
@@ -1232,6 +1312,7 @@
     "level": 1,
     "degree": 1,
     "text": "إذا كانت د(س) = س فإن د′(س) =",
+    "html": "إذا كانت <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">د</mi><mo>(</mo><mi mathvariant=\"normal\">س</mi><mo>)</mo><mo>=</mo><mi mathvariant=\"normal\">س</mi></math> فإن <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">د</mi><mo>′</mo><mo>(</mo><mi mathvariant=\"normal\">س</mi><mo>)</mo><mo>=</mo></math>",
     "options": [
      "١",
      "٠",
@@ -1245,6 +1326,7 @@
     "level": 1,
     "degree": 1,
     "text": "إذا كانت ص = ٤س³ فإن ءص/ءس =",
+    "html": "إذا كانت <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><mn>٤</mn><msup><mi mathvariant=\"normal\">س</mi><mrow><mn>٣</mn></mrow></msup></math> فإن <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mfrac><mrow><mi mathvariant=\"normal\">ء</mi><mi mathvariant=\"normal\">ص</mi></mrow><mrow><mi mathvariant=\"normal\">ء</mi><mi mathvariant=\"normal\">س</mi></mrow></mfrac><mo>=</mo></math>",
     "options": [
      "١٢س²",
      "١٢س³",
@@ -1258,6 +1340,7 @@
     "level": 2,
     "degree": 1,
     "text": "ء/ءس(١/س²) =",
+    "html": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mfrac><mrow><mi mathvariant=\"normal\">ء</mi></mrow><mrow><mi mathvariant=\"normal\">ء</mi><mi mathvariant=\"normal\">س</mi></mrow></mfrac><mo>(</mo><mfrac><mrow><mn>١</mn></mrow><mrow><msup><mi mathvariant=\"normal\">س</mi><mrow><mn>٢</mn></mrow></msup></mrow></mfrac><mo>)</mo><mo>=</mo></math>",
     "options": [
      "−٢/س³",
      "٢/س³",
@@ -1271,6 +1354,7 @@
     "level": 2,
     "degree": 1,
     "text": "ء/ءس(√س) =",
+    "html": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mfrac><mrow><mi mathvariant=\"normal\">ء</mi></mrow><mrow><mi mathvariant=\"normal\">ء</mi><mi mathvariant=\"normal\">س</mi></mrow></mfrac><mo>(</mo><msqrt><mi mathvariant=\"normal\">س</mi></msqrt><mo>)</mo><mo>=</mo></math>",
     "options": [
      "١/(٢√س)",
      "١/٢√س",
@@ -1284,6 +1368,7 @@
     "level": 2,
     "degree": 1,
     "text": "إذا كانت ص = ٣س⁴ − ٢س³ + ٥س − ١ فإن ءص/ءس =",
+    "html": "إذا كانت <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><mn>٣</mn><msup><mi mathvariant=\"normal\">س</mi><mrow><mn>٤</mn></mrow></msup><mo>−</mo><mn>٢</mn><msup><mi mathvariant=\"normal\">س</mi><mrow><mn>٣</mn></mrow></msup><mo>+</mo><mn>٥</mn><mi mathvariant=\"normal\">س</mi><mo>−</mo><mn>١</mn></math> فإن <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mfrac><mrow><mi mathvariant=\"normal\">ء</mi><mi mathvariant=\"normal\">ص</mi></mrow><mrow><mi mathvariant=\"normal\">ء</mi><mi mathvariant=\"normal\">س</mi></mrow></mfrac><mo>=</mo></math>",
     "options": [
      "١٢س³ − ٦س² + ٥",
      "١٢س³ − ٦س² + ٥س",
@@ -1297,6 +1382,7 @@
     "level": 2,
     "degree": 1,
     "text": "إذا كانت د(س) = (س + ٢)(س − ٥) فإن د′(س) =",
+    "html": "إذا كانت <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">د</mi><mo>(</mo><mi mathvariant=\"normal\">س</mi><mo>)</mo><mo>=</mo><mo>(</mo><mi mathvariant=\"normal\">س</mi><mo>+</mo><mn>٢</mn><mo>)</mo><mo>(</mo><mi mathvariant=\"normal\">س</mi><mo>−</mo><mn>٥</mn><mo>)</mo></math> فإن <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">د</mi><mo>′</mo><mo>(</mo><mi mathvariant=\"normal\">س</mi><mo>)</mo><mo>=</mo></math>",
     "options": [
      "٢س − ٣",
      "١",
@@ -1310,6 +1396,7 @@
     "level": 2,
     "degree": 1,
     "text": "إذا كانت د(س) = (س² + ٣س)/س فإن د′(س) =",
+    "html": "إذا كانت <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">د</mi><mo>(</mo><mi mathvariant=\"normal\">س</mi><mo>)</mo><mo>=</mo><mfrac><mrow><msup><mi mathvariant=\"normal\">س</mi><mrow><mn>٢</mn></mrow></msup><mo>+</mo><mn>٣</mn><mi mathvariant=\"normal\">س</mi></mrow><mrow><mi mathvariant=\"normal\">س</mi></mrow></mfrac></math> فإن <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">د</mi><mo>′</mo><mo>(</mo><mi mathvariant=\"normal\">س</mi><mo>)</mo><mo>=</mo></math>",
     "options": [
      "١",
      "٢س + ٣",
@@ -1323,6 +1410,7 @@
     "level": 3,
     "degree": 1,
     "text": "إذا كانت د(س) = ٦∛س² فإن د′(س) =",
+    "html": "إذا كانت <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">د</mi><mo>(</mo><mi mathvariant=\"normal\">س</mi><mo>)</mo><mo>=</mo><mn>٦</mn><mroot><mrow><msup><mi mathvariant=\"normal\">س</mi><mrow><mn>٢</mn></mrow></msup></mrow><mn>٣</mn></mroot></math> فإن <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">د</mi><mo>′</mo><mo>(</mo><mi mathvariant=\"normal\">س</mi><mo>)</mo><mo>=</mo></math>",
     "options": [
      "٤/(∛س)",
      "٤∛س",
@@ -1336,6 +1424,7 @@
     "level": 1,
     "degree": 1,
     "text": "الرمز ءص/ءس يعني:",
+    "html": "الرمز <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mfrac><mrow><mi mathvariant=\"normal\">ء</mi><mi mathvariant=\"normal\">ص</mi></mrow><mrow><mi mathvariant=\"normal\">ء</mi><mi mathvariant=\"normal\">س</mi></mrow></mfrac></math> يعني:",
     "options": [
      "المشتقة الأولى لـ ص بالنسبة إلى س",
      "خارج قسمة ص على س",
@@ -1349,6 +1438,7 @@
     "level": 1,
     "degree": 1,
     "text": "إذا كان المماس عند نقطة على منحنى أفقيًا فإن الميل عندها:",
+    "html": "إذا كان المماس عند نقطة على منحنى أفقيًا فإن الميل عندها:",
     "options": [
      "صفر",
      "موجب",
@@ -1362,6 +1452,7 @@
     "level": 3,
     "degree": 1,
     "text": "إذا كانت ص = ٢/(٣س³) فإن ءص/ءس =",
+    "html": "إذا كانت <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><mfrac><mrow><mn>٢</mn></mrow><mrow><mn>٣</mn><msup><mi mathvariant=\"normal\">س</mi><mrow><mn>٣</mn></mrow></msup></mrow></mfrac></math> فإن <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mfrac><mrow><mi mathvariant=\"normal\">ء</mi><mi mathvariant=\"normal\">ص</mi></mrow><mrow><mi mathvariant=\"normal\">ء</mi><mi mathvariant=\"normal\">س</mi></mrow></mfrac><mo>=</mo></math>",
     "options": [
      "−٢/س⁴",
      "−٦/س⁴",
@@ -1375,6 +1466,7 @@
     "level": 2,
     "degree": 1,
     "text": "إذا كانت د(س) = ١/٢س⁶ فإن د′(س) =",
+    "html": "إذا كانت <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">د</mi><mo>(</mo><mi mathvariant=\"normal\">س</mi><mo>)</mo><mo>=</mo><mfrac><mrow><mn>١</mn></mrow><mrow><mn>٢</mn></mrow></mfrac><msup><mi mathvariant=\"normal\">س</mi><mrow><mn>٦</mn></mrow></msup></math> فإن <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">د</mi><mo>′</mo><mo>(</mo><mi mathvariant=\"normal\">س</mi><mo>)</mo><mo>=</mo></math>",
     "options": [
      "٣س⁵",
      "٦س⁵",
@@ -1388,6 +1480,7 @@
     "level": 1,
     "degree": 1,
     "text": "ء/ءس(س⁵) =",
+    "html": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mfrac><mrow><mi mathvariant=\"normal\">ء</mi></mrow><mrow><mi mathvariant=\"normal\">ء</mi><mi mathvariant=\"normal\">س</mi></mrow></mfrac><mo>(</mo><msup><mi mathvariant=\"normal\">س</mi><mrow><mn>٥</mn></mrow></msup><mo>)</mo><mo>=</mo></math>",
     "options": [
      "٥س⁴",
      "س⁴",
@@ -1401,6 +1494,7 @@
     "level": 1,
     "degree": 1,
     "text": "إذا كانت د(س) = أ س³ + ٢س و د′(س) = ١٢س² + ٢ فإن أ =",
+    "html": "إذا كانت <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">د</mi><mo>(</mo><mi mathvariant=\"normal\">س</mi><mo>)</mo><mo>=</mo><mi mathvariant=\"normal\">أ</mi><msup><mi mathvariant=\"normal\">س</mi><mrow><mn>٣</mn></mrow></msup><mo>+</mo><mn>٢</mn><mi mathvariant=\"normal\">س</mi></math> و <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">د</mi><mo>′</mo><mo>(</mo><mi mathvariant=\"normal\">س</mi><mo>)</mo><mo>=</mo><mn>١٢</mn><msup><mi mathvariant=\"normal\">س</mi><mrow><mn>٢</mn></mrow></msup><mo>+</mo><mn>٢</mn></math> فإن <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">أ</mi><mo>=</mo></math>",
     "options": [
      "٤",
      "١٢",
@@ -1414,14 +1508,16 @@
     "degree": 1,
     "text": "مشتقة الدالة الثابتة د(س) = ٩ تساوي صفرًا.",
     "answer": true,
-    "level": 1
+    "level": 1,
+    "html": "مشتقة الدالة الثابتة د(س) = ٩ تساوي صفرًا."
    },
    {
     "type": "tf",
     "degree": 1,
     "text": "مشتقة (س − ١)² بالنسبة إلى س تساوي ٢س − ١.",
     "answer": false,
-    "level": 1
+    "level": 1,
+    "html": "مشتقة (س − ١)<sup>٢</sup> بالنسبة إلى س تساوي ٢س − ١."
    }
   ],
   "track": "g12b"
@@ -1459,6 +1555,7 @@
     "level": 1,
     "degree": 1,
     "text": "ميل منحنى ص = س² عند س = ٣:",
+    "html": "ميل منحنى <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><msup><mi mathvariant=\"normal\">س</mi><mrow><mn>٢</mn></mrow></msup></math> عند <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">س</mi><mo>=</mo><mn>٣</mn><mo>:</mo></math>",
     "options": [
      "٦",
      "٩",
@@ -1472,6 +1569,7 @@
     "level": 1,
     "degree": 1,
     "text": "ميل منحنى ص = س³ عند س = −١:",
+    "html": "ميل منحنى <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><msup><mi mathvariant=\"normal\">س</mi><mrow><mn>٣</mn></mrow></msup></math> عند <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">س</mi><mo>=</mo><mo>−</mo><mn>١</mn><mo>:</mo></math>",
     "options": [
      "٣",
      "−٣",
@@ -1485,6 +1583,7 @@
     "level": 2,
     "degree": 1,
     "text": "ميل منحنى ص = س² − ٤س + ١ عند النقطة (١، −٢):",
+    "html": "ميل منحنى <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><msup><mi mathvariant=\"normal\">س</mi><mrow><mn>٢</mn></mrow></msup><mo>−</mo><mn>٤</mn><mi mathvariant=\"normal\">س</mi><mo>+</mo><mn>١</mn></math> عند النقطة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mo>(</mo><mn>١</mn><mo>،</mo><mo>−</mo><mn>٢</mn><mo>)</mo><mo>:</mo></math>",
     "options": [
      "−٢",
      "٢",
@@ -1498,6 +1597,7 @@
     "level": 2,
     "degree": 1,
     "text": "ميل منحنى د(س) = ٦/س عند س = ٢:",
+    "html": "ميل منحنى <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">د</mi><mo>(</mo><mi mathvariant=\"normal\">س</mi><mo>)</mo><mo>=</mo><mfrac><mrow><mn>٦</mn></mrow><mrow><mi mathvariant=\"normal\">س</mi></mrow></mfrac></math> عند <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">س</mi><mo>=</mo><mn>٢</mn><mo>:</mo></math>",
     "options": [
      "−٣/٢",
      "٣",
@@ -1511,6 +1611,7 @@
     "level": 2,
     "degree": 1,
     "text": "الإحداثي السيني للنقطة التي يكون عندها ميل منحنى ص = س² − ٨س صفرًا:",
+    "html": "الإحداثي السيني للنقطة التي يكون عندها ميل منحنى <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><msup><mi mathvariant=\"normal\">س</mi><mrow><mn>٢</mn></mrow></msup><mo>−</mo><mn>٨</mn><mi mathvariant=\"normal\">س</mi></math> صفرًا:",
     "options": [
      "٤",
      "٨",
@@ -1524,6 +1625,7 @@
     "level": 2,
     "degree": 1,
     "text": "ميل منحنى ص = ٤√س عند س = ٤:",
+    "html": "ميل منحنى <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><mn>٤</mn><msqrt><mi mathvariant=\"normal\">س</mi></msqrt></math> عند <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">س</mi><mo>=</mo><mn>٤</mn><mo>:</mo></math>",
     "options": [
      "١",
      "٢",
@@ -1537,6 +1639,7 @@
     "level": 3,
     "degree": 1,
     "text": "النقطة على منحنى ص = س² + ٢س التي يكون الميل عندها ٦:",
+    "html": "النقطة على منحنى <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><msup><mi mathvariant=\"normal\">س</mi><mrow><mn>٢</mn></mrow></msup><mo>+</mo><mn>٢</mn><mi mathvariant=\"normal\">س</mi></math> التي يكون الميل عندها <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mn>٦</mn><mo>:</mo></math>",
     "options": [
      "(٢، ٨)",
      "(٣، ١٥)",
@@ -1550,6 +1653,7 @@
     "level": 3,
     "degree": 1,
     "text": "النقاط على منحنى ص = س³ − ١٢س التي يكون عندها الميل صفرًا:",
+    "html": "النقاط على منحنى <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><msup><mi mathvariant=\"normal\">س</mi><mrow><mn>٣</mn></mrow></msup><mo>−</mo><mn>١٢</mn><mi mathvariant=\"normal\">س</mi></math> التي يكون عندها الميل صفرًا:",
     "options": [
      "(٢، −١٦) و (−٢، ١٦)",
      "(٢، ١٦) و (−٢، −١٦)",
@@ -1563,6 +1667,7 @@
     "level": 1,
     "degree": 1,
     "text": "إذا كانت د′(٣) = −٢ فإن:",
+    "html": "إذا كانت <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">د</mi><mo>′</mo><mo>(</mo><mn>٣</mn><mo>)</mo><mo>=</mo><mo>−</mo><mn>٢</mn></math> فإن:",
     "options": [
      "ميل المماس عند س = ٣ يساوي −٢",
      "د(٣) = −٢",
@@ -1576,6 +1681,7 @@
     "level": 2,
     "degree": 1,
     "text": "إذا كان ميل منحنى ص = ك س² عند س = ٢ يساوي ١٢ فإن ك =",
+    "html": "إذا كان ميل منحنى <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><mi mathvariant=\"normal\">ك</mi><msup><mi mathvariant=\"normal\">س</mi><mrow><mn>٢</mn></mrow></msup></math> عند <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">س</mi><mo>=</mo><mn>٢</mn></math> يساوي <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mn>١٢</mn></math> فإن <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ك</mi><mo>=</mo></math>",
     "options": [
      "٣",
      "٦",
@@ -1589,6 +1695,7 @@
     "level": 3,
     "degree": 1,
     "text": "ميل منحنى ص = س²(س − ٣) عند س = ١:",
+    "html": "ميل منحنى <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><msup><mi mathvariant=\"normal\">س</mi><mrow><mn>٢</mn></mrow></msup><mo>(</mo><mi mathvariant=\"normal\">س</mi><mo>−</mo><mn>٣</mn><mo>)</mo></math> عند <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">س</mi><mo>=</mo><mn>١</mn><mo>:</mo></math>",
     "options": [
      "−٣",
      "−٢",
@@ -1602,6 +1709,7 @@
     "level": 1,
     "degree": 1,
     "text": "ميل منحنى ص = س² عند س = ٥:",
+    "html": "ميل منحنى <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><msup><mi mathvariant=\"normal\">س</mi><mrow><mn>٢</mn></mrow></msup></math> عند <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">س</mi><mo>=</mo><mn>٥</mn><mo>:</mo></math>",
     "options": [
      "١٠",
      "٢٥",
@@ -1615,6 +1723,7 @@
     "level": 1,
     "degree": 1,
     "text": "منحنى ص = س³ + ك س ميله عند س = ١ يساوي صفرًا. قيمة ك:",
+    "html": "منحنى <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><msup><mi mathvariant=\"normal\">س</mi><mrow><mn>٣</mn></mrow></msup><mo>+</mo><mi mathvariant=\"normal\">ك</mi><mi mathvariant=\"normal\">س</mi></math> ميله عند <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">س</mi><mo>=</mo><mn>١</mn></math> يساوي صفرًا. قيمة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ك</mi><mo>:</mo></math>",
     "options": [
      "−٣",
      "٣",
@@ -1628,14 +1737,16 @@
     "degree": 1,
     "text": "ميل المنحنى ص = د(س) عند س = أ يساوي د(أ).",
     "answer": false,
-    "level": 1
+    "level": 1,
+    "html": "ميل المنحنى ص = د(س) عند س = أ يساوي د(أ)."
    },
    {
     "type": "tf",
     "degree": 1,
     "text": "ميل المنحنى ص = س³ عند س = ٠ يساوي صفرًا.",
     "answer": true,
-    "level": 1
+    "level": 1,
+    "html": "ميل المنحنى ص = س<sup>٣</sup> عند س = ٠ يساوي صفرًا."
    }
   ],
   "track": "g12b"
@@ -1674,6 +1785,7 @@
     "level": 1,
     "degree": 1,
     "text": "معادلة المستقيم الذي ميله م ويمر بالنقطة (س١، ص١):",
+    "html": "معادلة المستقيم الذي ميله <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">م</mi></math> ويمر بالنقطة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mo>(</mo><msub><mi mathvariant=\"normal\">س</mi><mrow><mn>١</mn></mrow></msub><mo>،</mo><msub><mi mathvariant=\"normal\">ص</mi><mrow><mn>١</mn></mrow></msub><mo>)</mo><mo>:</mo></math>",
     "options": [
      "ص − ص١ = م(س − س١)",
      "ص + ص١ = م(س + س١)",
@@ -1687,6 +1799,7 @@
     "level": 2,
     "degree": 1,
     "text": "معادلة المماس لمنحنى ص = س² عند النقطة (٢، ٤):",
+    "html": "معادلة المماس لمنحنى <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><msup><mi mathvariant=\"normal\">س</mi><mrow><mn>٢</mn></mrow></msup></math> عند النقطة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mo>(</mo><mn>٢</mn><mo>،</mo><mn>٤</mn><mo>)</mo><mo>:</mo></math>",
     "options": [
      "ص = ٤س − ٤",
      "ص = ٢س",
@@ -1700,6 +1813,7 @@
     "level": 2,
     "degree": 1,
     "text": "معادلة المماس لمنحنى ص = س³ عند النقطة (١، ١):",
+    "html": "معادلة المماس لمنحنى <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><msup><mi mathvariant=\"normal\">س</mi><mrow><mn>٣</mn></mrow></msup></math> عند النقطة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mo>(</mo><mn>١</mn><mo>،</mo><mn>١</mn><mo>)</mo><mo>:</mo></math>",
     "options": [
      "ص = ٣س − ٢",
      "ص = ٣س + ١",
@@ -1713,6 +1827,7 @@
     "level": 2,
     "degree": 1,
     "text": "معادلة المماس الأفقي لمنحنى ص = س² − ٦س + ١٠:",
+    "html": "معادلة المماس الأفقي لمنحنى <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><msup><mi mathvariant=\"normal\">س</mi><mrow><mn>٢</mn></mrow></msup><mo>−</mo><mn>٦</mn><mi mathvariant=\"normal\">س</mi><mo>+</mo><mn>١٠</mn><mo>:</mo></math>",
     "options": [
      "ص = ١",
      "ص = ٣",
@@ -1726,6 +1841,7 @@
     "level": 3,
     "degree": 1,
     "text": "معادلة المماس لمنحنى ص = ٢/س عند س = ١:",
+    "html": "معادلة المماس لمنحنى <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><mfrac><mrow><mn>٢</mn></mrow><mrow><mi mathvariant=\"normal\">س</mi></mrow></mfrac></math> عند <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">س</mi><mo>=</mo><mn>١</mn><mo>:</mo></math>",
     "options": [
      "ص = −٢س + ٤",
      "ص = ٢س",
@@ -1739,6 +1855,7 @@
     "level": 2,
     "degree": 1,
     "text": "ميل المماس لمنحنى ص = ٥ − س² عند س = −٢:",
+    "html": "ميل المماس لمنحنى <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><mn>٥</mn><mo>−</mo><msup><mi mathvariant=\"normal\">س</mi><mrow><mn>٢</mn></mrow></msup></math> عند <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">س</mi><mo>=</mo><mo>−</mo><mn>٢</mn><mo>:</mo></math>",
     "options": [
      "٤",
      "−٤",
@@ -1752,6 +1869,7 @@
     "level": 3,
     "degree": 1,
     "text": "معادلة المماس لمنحنى ص = ٢√س عند س = ٩:",
+    "html": "معادلة المماس لمنحنى <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><mn>٢</mn><msqrt><mi mathvariant=\"normal\">س</mi></msqrt></math> عند <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">س</mi><mo>=</mo><mn>٩</mn><mo>:</mo></math>",
     "options": [
      "ص = ١/٣س + ٣",
      "ص = ٣س − ٢١",
@@ -1765,6 +1883,7 @@
     "level": 3,
     "degree": 1,
     "text": "المماس لمنحنى ص = س² + ب س عند س = ١ ميله ٥. قيمة ب:",
+    "html": "المماس لمنحنى <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><msup><mi mathvariant=\"normal\">س</mi><mrow><mn>٢</mn></mrow></msup><mo>+</mo><mi mathvariant=\"normal\">ب</mi><mi mathvariant=\"normal\">س</mi></math> عند <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">س</mi><mo>=</mo><mn>١</mn></math> ميله <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mn>٥</mn><mo>.</mo></math> قيمة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ب</mi><mo>:</mo></math>",
     "options": [
      "٣",
      "٥",
@@ -1778,6 +1897,7 @@
     "level": 2,
     "degree": 1,
     "text": "المقطع الصادي للمماس لمنحنى ص = س² + ١ عند النقطة (١، ٢):",
+    "html": "المقطع الصادي للمماس لمنحنى <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><msup><mi mathvariant=\"normal\">س</mi><mrow><mn>٢</mn></mrow></msup><mo>+</mo><mn>١</mn></math> عند النقطة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mo>(</mo><mn>١</mn><mo>،</mo><mn>٢</mn><mo>)</mo><mo>:</mo></math>",
     "options": [
      "٠",
      "٢",
@@ -1791,6 +1911,7 @@
     "level": 1,
     "degree": 1,
     "text": "يكون المماس لمنحنى أفقيًا عند النقاط التي فيها:",
+    "html": "يكون المماس لمنحنى أفقيًا عند النقاط التي فيها:",
     "options": [
      "ءص/ءس = ٠",
      "ص = ٠",
@@ -1804,6 +1925,7 @@
     "level": 1,
     "degree": 1,
     "text": "ميل المماس لمنحنى ص = س³ عند س = ٢:",
+    "html": "ميل المماس لمنحنى <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><msup><mi mathvariant=\"normal\">س</mi><mrow><mn>٣</mn></mrow></msup></math> عند <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">س</mi><mo>=</mo><mn>٢</mn><mo>:</mo></math>",
     "options": [
      "١٢",
      "٨",
@@ -1817,6 +1939,7 @@
     "level": 1,
     "degree": 1,
     "text": "معادلة المماس لمنحنى ص = ٤/س عند النقطة (٢، ٢):",
+    "html": "معادلة المماس لمنحنى <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><mfrac><mrow><mn>٤</mn></mrow><mrow><mi mathvariant=\"normal\">س</mi></mrow></mfrac></math> عند النقطة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mo>(</mo><mn>٢</mn><mo>،</mo><mn>٢</mn><mo>)</mo><mo>:</mo></math>",
     "options": [
      "ص = −س + ٤",
      "ص = س",
@@ -1830,14 +1953,16 @@
     "degree": 1,
     "text": "لكتابة معادلة المماس نحتاج نقطة التماس والميل عندها.",
     "answer": true,
-    "level": 1
+    "level": 1,
+    "html": "لكتابة معادلة المماس نحتاج نقطة التماس والميل عندها."
    },
    {
     "type": "tf",
     "degree": 1,
     "text": "معادلة مماس المنحنى ص = س² + ١ عند س = ٠ هي ص = ٠.",
     "answer": false,
-    "level": 1
+    "level": 1,
+    "html": "معادلة مماس المنحنى ص = س<sup>٢</sup> + ١ عند س = ٠ هي ص = ٠."
    }
   ],
   "track": "g12b"
@@ -1875,6 +2000,7 @@
     "level": 1,
     "degree": 1,
     "text": "المشتقة الثانية هي:",
+    "html": "المشتقة الثانية هي:",
     "options": [
      "مشتقة المشتقة الأولى",
      "مربع المشتقة الأولى",
@@ -1888,6 +2014,7 @@
     "level": 1,
     "degree": 1,
     "text": "إذا كانت ص = س⁴ فإن ء²ص/ءس² =",
+    "html": "إذا كانت <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><msup><mi mathvariant=\"normal\">س</mi><mrow><mn>٤</mn></mrow></msup></math> فإن <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mfrac><mrow><msup><mi mathvariant=\"normal\">ء</mi><mn>٢</mn></msup><mi mathvariant=\"normal\">ص</mi></mrow><mrow><mi mathvariant=\"normal\">ء</mi><msup><mrow><mi mathvariant=\"normal\">س</mi></mrow><mn>٢</mn></msup></mrow></mfrac><mo>=</mo></math>",
     "options": [
      "١٢س²",
      "٤س³",
@@ -1901,6 +2028,7 @@
     "level": 1,
     "degree": 1,
     "text": "إذا كانت د(س) = ٥س² − ٣س + ١ فإن د″(س) =",
+    "html": "إذا كانت <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">د</mi><mo>(</mo><mi mathvariant=\"normal\">س</mi><mo>)</mo><mo>=</mo><mn>٥</mn><msup><mi mathvariant=\"normal\">س</mi><mrow><mn>٢</mn></mrow></msup><mo>−</mo><mn>٣</mn><mi mathvariant=\"normal\">س</mi><mo>+</mo><mn>١</mn></math> فإن <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">د</mi><mo>″</mo><mo>(</mo><mi mathvariant=\"normal\">س</mi><mo>)</mo><mo>=</mo></math>",
     "options": [
      "١٠",
      "١٠س − ٣",
@@ -1914,6 +2042,7 @@
     "level": 2,
     "degree": 1,
     "text": "إذا كانت د(س) = س³ − ٦س² فإن د″(٢) =",
+    "html": "إذا كانت <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">د</mi><mo>(</mo><mi mathvariant=\"normal\">س</mi><mo>)</mo><mo>=</mo><msup><mi mathvariant=\"normal\">س</mi><mrow><mn>٣</mn></mrow></msup><mo>−</mo><mn>٦</mn><msup><mi mathvariant=\"normal\">س</mi><mrow><mn>٢</mn></mrow></msup></math> فإن <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">د</mi><mo>″</mo><mo>(</mo><mn>٢</mn><mo>)</mo><mo>=</mo></math>",
     "options": [
      "٠",
      "١٢",
@@ -1927,6 +2056,7 @@
     "level": 2,
     "degree": 1,
     "text": "إذا كانت ص = ١/س فإن ء²ص/ءس² =",
+    "html": "إذا كانت <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><mfrac><mrow><mn>١</mn></mrow><mrow><mi mathvariant=\"normal\">س</mi></mrow></mfrac></math> فإن <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mfrac><mrow><msup><mi mathvariant=\"normal\">ء</mi><mn>٢</mn></msup><mi mathvariant=\"normal\">ص</mi></mrow><mrow><mi mathvariant=\"normal\">ء</mi><msup><mrow><mi mathvariant=\"normal\">س</mi></mrow><mn>٢</mn></msup></mrow></mfrac><mo>=</mo></math>",
     "options": [
      "٢/س³",
      "−١/س²",
@@ -1940,6 +2070,7 @@
     "level": 2,
     "degree": 1,
     "text": "إذا كانت د(س) = ٧س − ٤ فإن د″(س) =",
+    "html": "إذا كانت <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">د</mi><mo>(</mo><mi mathvariant=\"normal\">س</mi><mo>)</mo><mo>=</mo><mn>٧</mn><mi mathvariant=\"normal\">س</mi><mo>−</mo><mn>٤</mn></math> فإن <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">د</mi><mo>″</mo><mo>(</mo><mi mathvariant=\"normal\">س</mi><mo>)</mo><mo>=</mo></math>",
     "options": [
      "٠",
      "٧",
@@ -1953,6 +2084,7 @@
     "level": 3,
     "degree": 1,
     "text": "إذا كانت ص = ٨√س فإن قيمة ء²ص/ءس² عند س = ٤:",
+    "html": "إذا كانت <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><mn>٨</mn><msqrt><mi mathvariant=\"normal\">س</mi></msqrt></math> فإن قيمة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mfrac><mrow><msup><mi mathvariant=\"normal\">ء</mi><mn>٢</mn></msup><mi mathvariant=\"normal\">ص</mi></mrow><mrow><mi mathvariant=\"normal\">ء</mi><msup><mrow><mi mathvariant=\"normal\">س</mi></mrow><mn>٢</mn></msup></mrow></mfrac></math> عند <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">س</mi><mo>=</mo><mn>٤</mn><mo>:</mo></math>",
     "options": [
      "−١/٤",
      "١/٤",
@@ -1966,6 +2098,7 @@
     "level": 3,
     "degree": 1,
     "text": "إذا كانت د(س) = ك س³ و د″(١) = ١٨ فإن ك =",
+    "html": "إذا كانت <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">د</mi><mo>(</mo><mi mathvariant=\"normal\">س</mi><mo>)</mo><mo>=</mo><mi mathvariant=\"normal\">ك</mi><msup><mi mathvariant=\"normal\">س</mi><mrow><mn>٣</mn></mrow></msup></math> و <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">د</mi><mo>″</mo><mo>(</mo><mn>١</mn><mo>)</mo><mo>=</mo><mn>١٨</mn></math> فإن <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ك</mi><mo>=</mo></math>",
     "options": [
      "٣",
      "٦",
@@ -1979,6 +2112,7 @@
     "level": 2,
     "degree": 1,
     "text": "إذا كانت ص = ٢س⁵ + س فإن ء²ص/ءس² =",
+    "html": "إذا كانت <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><mn>٢</mn><msup><mi mathvariant=\"normal\">س</mi><mrow><mn>٥</mn></mrow></msup><mo>+</mo><mi mathvariant=\"normal\">س</mi></math> فإن <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mfrac><mrow><msup><mi mathvariant=\"normal\">ء</mi><mn>٢</mn></msup><mi mathvariant=\"normal\">ص</mi></mrow><mrow><mi mathvariant=\"normal\">ء</mi><msup><mrow><mi mathvariant=\"normal\">س</mi></mrow><mn>٢</mn></msup></mrow></mfrac><mo>=</mo></math>",
     "options": [
      "٤٠س³",
      "١٠س⁴ + ١",
@@ -1992,6 +2126,7 @@
     "level": 1,
     "degree": 1,
     "text": "رمز آخر للمشتقة الثانية ء²ص/ءس²:",
+    "html": "رمز آخر للمشتقة الثانية <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mfrac><mrow><msup><mi mathvariant=\"normal\">ء</mi><mn>٢</mn></msup><mi mathvariant=\"normal\">ص</mi></mrow><mrow><mi mathvariant=\"normal\">ء</mi><msup><mrow><mi mathvariant=\"normal\">س</mi></mrow><mn>٢</mn></msup></mrow></mfrac><mo>:</mo></math>",
     "options": [
      "د″(س)",
      "(د′(س))²",
@@ -2005,6 +2140,7 @@
     "level": 1,
     "degree": 1,
     "text": "إذا كانت ص = س³ فإن ء²ص/ءس² =",
+    "html": "إذا كانت <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">ص</mi><mo>=</mo><msup><mi mathvariant=\"normal\">س</mi><mrow><mn>٣</mn></mrow></msup></math> فإن <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mfrac><mrow><msup><mi mathvariant=\"normal\">ء</mi><mn>٢</mn></msup><mi mathvariant=\"normal\">ص</mi></mrow><mrow><mi mathvariant=\"normal\">ء</mi><msup><mrow><mi mathvariant=\"normal\">س</mi></mrow><mn>٢</mn></msup></mrow></mfrac><mo>=</mo></math>",
     "options": [
      "٦س",
      "٣س²",
@@ -2018,6 +2154,7 @@
     "level": 1,
     "degree": 1,
     "text": "إذا كانت د(س) = ٤√س فإن د″(٤) =",
+    "html": "إذا كانت <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">د</mi><mo>(</mo><mi mathvariant=\"normal\">س</mi><mo>)</mo><mo>=</mo><mn>٤</mn><msqrt><mi mathvariant=\"normal\">س</mi></msqrt></math> فإن <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">د</mi><mo>″</mo><mo>(</mo><mn>٤</mn><mo>)</mo><mo>=</mo></math>",
     "options": [
      "−١/٨",
      "١/٨",
@@ -2031,14 +2168,16 @@
     "degree": 1,
     "text": "المشتقة الثانية لأي دالة خطية تساوي صفرًا.",
     "answer": true,
-    "level": 1
+    "level": 1,
+    "html": "المشتقة الثانية لأي دالة خطية تساوي صفرًا."
    },
    {
     "type": "tf",
     "degree": 1,
     "text": "إذا كان د(س) = ٥س² فإن د″(س) = ١٠س.",
     "answer": false,
-    "level": 1
+    "level": 1,
+    "html": "إذا كان د(س) = ٥س<sup>٢</sup> فإن د″(س) = ١٠س."
    }
   ],
   "track": "g12b"
@@ -2078,6 +2217,7 @@
     "level": 1,
     "degree": 1,
     "text": "تكون الدالة متزايدة على فترة إذا كان في هذه الفترة:",
+    "html": "تكون الدالة متزايدة على فترة إذا كان في هذه الفترة:",
     "options": [
      "د′(س) > ٠",
      "د′(س) < ٠",
@@ -2091,6 +2231,7 @@
     "level": 1,
     "degree": 1,
     "text": "تكون الدالة متناقصة على فترة إذا كان في هذه الفترة:",
+    "html": "تكون الدالة متناقصة على فترة إذا كان في هذه الفترة:",
     "options": [
      "د′(س) < ٠",
      "د′(س) > ٠",
@@ -2104,6 +2245,7 @@
     "level": 2,
     "degree": 1,
     "text": "الدالة د(س) = س² − ٤س متزايدة عندما:",
+    "html": "الدالة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">د</mi><mo>(</mo><mi mathvariant=\"normal\">س</mi><mo>)</mo><mo>=</mo><msup><mi mathvariant=\"normal\">س</mi><mrow><mn>٢</mn></mrow></msup><mo>−</mo><mn>٤</mn><mi mathvariant=\"normal\">س</mi></math> متزايدة عندما:",
     "options": [
      "س > ٢",
      "س < ٢",
@@ -2117,6 +2259,7 @@
     "level": 2,
     "degree": 1,
     "text": "الدالة د(س) = ٣ + ٦س − س² متناقصة عندما:",
+    "html": "الدالة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">د</mi><mo>(</mo><mi mathvariant=\"normal\">س</mi><mo>)</mo><mo>=</mo><mn>٣</mn><mo>+</mo><mn>٦</mn><mi mathvariant=\"normal\">س</mi><mo>−</mo><msup><mi mathvariant=\"normal\">س</mi><mrow><mn>٢</mn></mrow></msup></math> متناقصة عندما:",
     "options": [
      "س > ٣",
      "س < ٣",
@@ -2130,6 +2273,7 @@
     "level": 1,
     "degree": 1,
     "text": "الدالة د(س) = ٥ − ٢س:",
+    "html": "الدالة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">د</mi><mo>(</mo><mi mathvariant=\"normal\">س</mi><mo>)</mo><mo>=</mo><mn>٥</mn><mo>−</mo><mn>٢</mn><mi mathvariant=\"normal\">س</mi><mo>:</mo></math>",
     "options": [
      "متناقصة دائمًا",
      "متزايدة دائمًا",
@@ -2143,6 +2287,7 @@
     "level": 2,
     "degree": 1,
     "text": "الدالة د(س) = ٢س² + ٨س + ١ عند س = ١:",
+    "html": "الدالة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">د</mi><mo>(</mo><mi mathvariant=\"normal\">س</mi><mo>)</mo><mo>=</mo><mn>٢</mn><msup><mi mathvariant=\"normal\">س</mi><mrow><mn>٢</mn></mrow></msup><mo>+</mo><mn>٨</mn><mi mathvariant=\"normal\">س</mi><mo>+</mo><mn>١</mn></math> عند <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">س</mi><mo>=</mo><mn>١</mn><mo>:</mo></math>",
     "options": [
      "متزايدة",
      "متناقصة",
@@ -2156,6 +2301,7 @@
     "level": 2,
     "degree": 1,
     "text": "الدالة د(س) = س² + ١٠س متناقصة عندما:",
+    "html": "الدالة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">د</mi><mo>(</mo><mi mathvariant=\"normal\">س</mi><mo>)</mo><mo>=</mo><msup><mi mathvariant=\"normal\">س</mi><mrow><mn>٢</mn></mrow></msup><mo>+</mo><mn>١٠</mn><mi mathvariant=\"normal\">س</mi></math> متناقصة عندما:",
     "options": [
      "س < −٥",
      "س > −٥",
@@ -2169,6 +2315,7 @@
     "level": 3,
     "degree": 1,
     "text": "إذا كانت د(س) = أ س² + ٤س متزايدة عندما س < ١ ومتناقصة عندما س > ١ فإن أ =",
+    "html": "إذا كانت <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">د</mi><mo>(</mo><mi mathvariant=\"normal\">س</mi><mo>)</mo><mo>=</mo><mi mathvariant=\"normal\">أ</mi><msup><mi mathvariant=\"normal\">س</mi><mrow><mn>٢</mn></mrow></msup><mo>+</mo><mn>٤</mn><mi mathvariant=\"normal\">س</mi></math> متزايدة عندما <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">س</mi><mo>&lt;</mo><mn>١</mn></math> ومتناقصة عندما <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">س</mi><mo>&gt;</mo><mn>١</mn></math> فإن <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">أ</mi><mo>=</mo></math>",
     "options": [
      "−٢",
      "٢",
@@ -2182,6 +2329,7 @@
     "level": 3,
     "degree": 1,
     "text": "الدالة د(س) = (س − ١)(س − ٥) متناقصة عندما:",
+    "html": "الدالة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">د</mi><mo>(</mo><mi mathvariant=\"normal\">س</mi><mo>)</mo><mo>=</mo><mo>(</mo><mi mathvariant=\"normal\">س</mi><mo>−</mo><mn>١</mn><mo>)</mo><mo>(</mo><mi mathvariant=\"normal\">س</mi><mo>−</mo><mn>٥</mn><mo>)</mo></math> متناقصة عندما:",
     "options": [
      "س < ٣",
      "س > ٣",
@@ -2195,6 +2343,7 @@
     "level": 2,
     "degree": 1,
     "text": "إذا كانت د′(س) = ٣ − س فإن د(س) متزايدة عندما:",
+    "html": "إذا كانت <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">د</mi><mo>′</mo><mo>(</mo><mi mathvariant=\"normal\">س</mi><mo>)</mo><mo>=</mo><mn>٣</mn><mo>−</mo><mi mathvariant=\"normal\">س</mi></math> فإن <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">د</mi><mo>(</mo><mi mathvariant=\"normal\">س</mi><mo>)</mo></math> متزايدة عندما:",
     "options": [
      "س < ٣",
      "س > ٣",
@@ -2208,6 +2357,7 @@
     "level": 1,
     "degree": 1,
     "text": "تكون الدالة متزايدة على فترة إذا كانت فيها:",
+    "html": "تكون الدالة متزايدة على فترة إذا كانت فيها:",
     "options": [
      "د′(س) > ٠",
      "د′(س) < ٠",
@@ -2221,6 +2371,7 @@
     "level": 1,
     "degree": 1,
     "text": "الدالة د(س) = ٩ + ٤س − س² متناقصة عندما:",
+    "html": "الدالة <math xmlns=\"http://www.w3.org/1998/Math/MathML\" dir=\"rtl\"><mi mathvariant=\"normal\">د</mi><mo>(</mo><mi mathvariant=\"normal\">س</mi><mo>)</mo><mo>=</mo><mn>٩</mn><mo>+</mo><mn>٤</mn><mi mathvariant=\"normal\">س</mi><mo>−</mo><msup><mi mathvariant=\"normal\">س</mi><mrow><mn>٢</mn></mrow></msup></math> متناقصة عندما:",
     "options": [
      "س > ٢",
      "س < ٢",
@@ -2234,14 +2385,16 @@
     "degree": 1,
     "text": "الدالة د(س) = س² متزايدة عندما س > ٠.",
     "answer": true,
-    "level": 1
+    "level": 1,
+    "html": "الدالة د(س) = س<sup>٢</sup> متزايدة عندما س > ٠."
    },
    {
     "type": "tf",
     "degree": 1,
     "text": "الدالة د(س) = ٥ − س² متزايدة عندما س > ٠.",
     "answer": false,
-    "level": 1
+    "level": 1,
+    "html": "الدالة د(س) = ٥ − س<sup>٢</sup> متزايدة عندما س > ٠."
    }
   ],
   "track": "g12b"
