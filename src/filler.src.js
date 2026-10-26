@@ -156,9 +156,26 @@
     }
     return null;
   }
-  function score(name, t, tn) {
-    var n = norm(String(name).replace(/^[\s٠-٩0-9\-–()أبجـد]+(?=\s)/, ''));
-    return (n && (t.indexOf(n) > -1 || n.indexOf(t.replace(/^\d+/, '')) > -1) ? 3 : 0) + (tn && nums(name) === tn ? 1 : 0);
+  /* الدروس اللي تناسب عنوان نور، من الأنسب للأقل (tools/test-match.js بيختبرها بعناوين نور الحقيقية) */
+  function rank(B, title, track) {
+    var t = norm(dropPart(title)), tn = nums(title);
+    return B.filter(function (l) { return !track || !l.track || l.track === track || (track.length === 3 && l.track.indexOf(track) === 0); })
+      .map(function (l) { return { l: l, sc: score(l.lesson, t, tn, title) }; }).filter(function (h) { return h.sc >= 3; }).sort(function (a, b) { return b.sc - a.sc; });
+  }
+  /* حرف الجزء (أ، ب، جـ، ج، د) لما يبقى كلمة لوحده: نور بتكتبه بعد النقطتين «…للدوال: أ الانسحاب» والبنك بعد الرقم «٢-٥ أ …» */
+  function dropPart(s) { return String(s || '').replace(/(^|[\s:،\-–])(أ|ب|جـ|ج|د)(?=\s)/g, '$1'); }
+  function score(name, t, tn, raw) {
+    var pre = /^[\s٠-٩0-9\-–()أبجـد]+(?=\s)/, n = norm(dropPart(String(name).replace(pre, '')));
+    var nb = tn && nums(name) === tn ? 1 : 0;
+    if (n && (t.indexOf(n) > -1 || n.indexOf(t.replace(/^\d+/, '')) > -1)) return 3 + nb;
+    // جزء من درس متقسم بصياغة مختلفة: نفس الرقم ونفس الاسم قبل «:» ← نقارن كلمات اسم الجزء (أقل من التطابق الكامل دايمًا)
+    var a = String(name).split(':'), b = String(raw || '').split(':');
+    if (!nb || a.length < 2 || b.length < 2) return 0;
+    var base = norm(dropPart(a[0].replace(pre, '')));
+    if (!base || norm(dropPart(b[0])).indexOf(base) < 0) return 0;
+    var w = function (x) { return dropPart(x).split(/\s+/).map(function (k) { return norm(k).replace(/^(وال|بال|كال|فال|لل|ال)/, ''); }).filter(function (k) { return k.length > 2; }); };
+    var p = w(a.slice(1).join(':')), q = w(b.slice(1).join(':')), c = p.filter(function (k) { return q.indexOf(k) > -1; }).length, r = c / Math.max(p.length, q.length, 1);
+    return r >= 0.34 ? 3 + 0.9 * r : 0;
   }
   var titleEl = document.getElementById('PreparationTitle'), title = titleEl ? titleEl.value.trim() : '';
   if (!title) return alert('اختار الدرس من الشجرة الأول، وبعدين دوس الزر.');
@@ -166,9 +183,8 @@
   if (!tracks) { track = pickTrack('مش لاقي اسم الصف في الصفحة. اختار الصف:', CURR.map(function (g) { return g.t; }), null); if (!track) return; tracks = [track]; }
   loadBank(tracks, main);
   function main(BANK) {
-  var t = norm(title), tn = nums(title), d = null;
-  var hits = BANK.filter(function (l) { return !track || !l.track || l.track === track || (track.length === 3 && l.track.indexOf(track) === 0); })
-    .map(function (l) { return { l: l, sc: score(l.lesson, t, tn) }; }).filter(function (h) { return h.sc >= 3; }).sort(function (a, b) { return b.sc - a.sc; });
+  var t = norm(dropPart(title)), tn = nums(title), d = null;
+  var hits = rank(BANK, title, track);
   if (hits.length > 1 && hits[0].sc === hits[1].sc) {
     var pick = prompt('لقيت أكتر من تحضير للدرس ده. اكتب رقم اللي تحبه:\n' + hits.map(function (h, i) { return (i + 1) + ') ' + h.l.grade + ' — ' + h.l.lesson; }).join('\n'), '1');
     if (!pick) return; d = (hits[+pick - 1] || {}).l;
@@ -178,7 +194,7 @@
     var best = null;
     CURR.forEach(function (g) { if (track && g.t !== track && !(track.length === 3 && g.t.indexOf(track) === 0)) return;
       g.s.forEach(function (sm, si) { sm.u.forEach(function (u, ui) { u.l.forEach(function (ln, li) {
-        var sc = score(ln, t, tn); if (sc >= 3 && (!best || sc > best.sc)) best = { sc: sc, tok: g.t + '-' + (si + 1) + '-' + (ui + 1) + '-' + (li + 1), name: 'الصف ' + g.n + ' — ' + ln };
+        var sc = score(ln, t, tn, title); if (sc >= 3 && (!best || sc > best.sc)) best = { sc: sc, tok: g.t + '-' + (si + 1) + '-' + (ui + 1) + '-' + (li + 1), name: 'الصف ' + g.n + ' — ' + ln };
       }); }); }); });
     var outs = [].slice.call(document.querySelectorAll('#criteria-checkbox input[name^="Preparation[criteria]["]')).map(function (cb) { return ((cb.closest('label') || cb.parentNode).textContent || '').replace(/\s+/g, ' ').trim(); }).filter(Boolean);
     var copied = false;

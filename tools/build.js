@@ -7,6 +7,7 @@ const fs=require('fs'),path=require('path'),R=p=>path.join(__dirname,'..',p);
 const bank=JSON.parse(fs.readFileSync(R('bank.json'),'utf8'));
 const todo=bank.filter(b=>JSON.stringify(b).includes('TODO'));
 if(todo.length){console.error('❌ فيه دروس لسه فيها TODO:\n'+todo.map(b=>'  '+b.id+' '+b.lesson).join('\n'));process.exit(1);}
+try{require('child_process').execFileSync(process.execPath,[R('tools/test-match.js')],{stdio:['ignore','pipe','inherit']})}catch(e){console.error('❌ اختبار المطابقة بعناوين نور فشل:\n'+String(e.stdout||'').split('\n').filter(l=>l.startsWith('✘')).join('\n'));process.exit(1)}
 const ids=new Set();for(const b of bank){if(ids.has(b.id)){console.error('❌ id مكرر: '+b.id);process.exit(1)}ids.add(b.id)}
 const CURR=fs.readFileSync(R('curriculum.json'),'utf8').trim(),tracks=JSON.parse(CURR).map(g=>g.t);
 const noTrack=bank.filter(b=>!tracks.includes(b.track));
