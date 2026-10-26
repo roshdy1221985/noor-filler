@@ -1,0 +1,82 @@
+{
+ "12-math-basic": {
+  "unit1.html": {
+   "hash": "598acf1ea2d9583833ef35cf18b92c13a9340a0c99e51565d667506ad66dd574",
+   "track": "g12b",
+   "unit": 1,
+   "sem": 1,
+   "at": "2026-10-26",
+   "legacy": true
+  },
+  "unit2.html": {
+   "hash": "1a68397e711a4b18cbbcca49712d9586aa2cac3762a1acfe938c83ad591d25f9",
+   "track": "g12b",
+   "unit": 2,
+   "sem": 1,
+   "at": "2026-10-26",
+   "legacy": true
+  }
+ },
+ "11-advanced-math": {
+  "unit1.html": {
+   "hash": "2b0de1838cec603436bcae3d8575aee47c42e80dc730a45fe44df47b5cb6fefd",
+   "track": "g11a",
+   "unit": 1,
+   "sem": 1,
+   "at": "2026-10-26"
+  },
+  "unit2.html": {
+   "hash": "68878c5691c1b560593944f31e51cb3beeacd4e5d6b7a6d4782377f8634ca5a0",
+   "track": "g11a",
+   "unit": 2,
+   "sem": 1,
+   "at": "2026-10-26"
+  },
+  "unit3.html": {
+   "hash": "e89c0e054f1e7d07624bffe0fabea97755331bff6a9b5e41b400d0259cef7030",
+   "track": "g11a",
+   "unit": 3,
+   "sem": 1,
+   "at": "2026-10-26"
+  }
+ },
+ "advanced-math-G12": {
+  "unit1.html": {
+   "hash": "e22945322311496d60a1442177d8642847039fd79200c9682c52f598b6f41888",
+   "track": "g12a",
+   "unit": 1,
+   "sem": 1,
+   "at": "2026-10-26"
+  },
+  "unit2.html": {
+   "hash": "abffae1282c6970a4ef917cf8771658d2ac7ca6c47e41063d4b461a4e4a85e67",
+   "track": "g12a",
+   "unit": 2,
+   "sem": 1,
+   "at": "2026-10-26"
+  }
+ },
+ "math-G8": {
+  "unit1.html": {
+   "hash": "ec9491cb7108d5f430b4906d2aa9f17e0ddd984340b9ff493aea47c4520507d6",
+   "track": "g08",
+   "unit": 1,
+   "sem": 1,
+   "at": "2026-10-26"
+  },
+  "unit2.html": {
+   "hash": "161e825da34a524fc26ceafb95f9cd1449ba6ebabb39db91c314dddd6bfb0b37",
+   "track": "g08",
+   "unit": 2,
+   "sem": 1,
+   "at": "2026-10-26"
+  },
+  "unit3.html": {
+   "hash": "42e6188b4e56f03516234cba9660142de5d597ef6e545258eaf28f43dbb4880e",
+   "track": "g08",
+   "unit": 3,
+   "sem": 1,
+   "at": "2026-10-26"
+  }
+ }
+}

@@ -2,6 +2,7 @@
 // الاستخدام: node tools/import-app.js <unitN.html> <كود-المسار مثل g11a> <رقم-الفصل 1 أو 2> [رابط-المراجعة]
 // محتاج playwright (بيفتح الملف في متصفح مخفي ويقرأ UNIT و LESSONS بعد التحميل)
 const fs=require('fs'),path=require('path'),R=p=>path.join(__dirname,'..',p);
+const BANK=process.env.NOOR_BANK||R('bank.json');   // sync-all بيستخدم نسخة مؤقتة عشان يقارن
 const {P,Hh,digits,rich,hwFilter,figOk}=require('./conv.js');
 const [file,track,sem,link]=process.argv.slice(2);
 if(!file||!/^g(0[5-9]|10|11[ab]|12[ab])$/.test(track||'')||!/^[12]$/.test(sem||'')){console.error('الاستخدام: node tools/import-app.js unit1.html g11a 1 [https://...]');process.exit(1)}
@@ -28,7 +29,7 @@ const bad=s=>/<(svg|img|table|canvas)/i.test(s);
 const T=rows=>"<table border='1' cellpadding='6' style='border-collapse:collapse;width:100%'><tr><th>المرحلة والزمن</th><th>دور المعلم</th><th>دور الطالب</th><th>الاستراتيجية</th></tr>"+rows.map(r=>'<tr>'+r.map(c=>'<td>'+c+'</td>').join('')+'</tr>').join('')+'</table>';
 
 (async()=>{
-  const {UNIT,LESSONS}=await load(file), bank=JSON.parse(fs.readFileSync(R('bank.json'),'utf8'));
+  const {UNIT,LESSONS}=await load(file), bank=JSON.parse(fs.readFileSync(BANK,'utf8'));
   const CU=CURR.s[sem-1].u[UNIT.n-(sem==2?CURR.s[0].u.length:0)-1];
   if(!CU){console.error('❌ الوحدة '+UNIT.n+' مش موجودة في خريطة المنهج للفصل '+sem);process.exit(1)}
   const unitName='الوحدة '+ORD[UNIT.n]+': '+CU.n;
@@ -78,7 +79,8 @@ const T=rows=>"<table border='1' cellpadding='6' style='border-collapse:collapse
     const i=bank.findIndex(b=>b.id===id);
     if(i>=0){bank[i]=lesson;updated++}else{bank.push(lesson);added++}
   });
-  fs.writeFileSync(R('bank.json'),JSON.stringify(bank,null,1));
+  fs.writeFileSync(BANK,JSON.stringify(bank,null,1));
   const got=new Set(bank.filter(b=>b.track===track&&b.unit===unitName).map(b=>b.lesson)),miss=CU.l.filter(x=>!got.has(x)&&![...got].some(g=>g.startsWith(x.split(' ')[0]+' ')));
   console.log(`✔ ${unitName}: ${added} درس جديد، ${updated} درس اتحدّث.`+' الفلتر شال '+fAll+' سؤال بيعتمد على رسمة أو سؤال تاني (منهم '+fHw+' كانوا هيدخلوا الواجب).'+(miss.length?' دروس في المنهج من غير مراجعة: '+miss.join(' ، ')+'.':'')+(skipped.length?' اتسابت: '+skipped.join(' ، '):'')+' الدروس اللي فيها TODO لازم تتكمّل قبل البناء.');
+  console.log('@@STATS '+JSON.stringify({unit:UNIT.n,unitName,added,updated,fAll,fHw,skipped,miss,todo:bank.filter(b=>b.track===track&&b.unit===unitName&&JSON.stringify(b).includes('TODO')).map(b=>b.id)}));   // لـ sync-all
 })();
